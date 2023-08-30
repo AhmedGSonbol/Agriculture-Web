@@ -1,0 +1,536 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&family=Poppins:wght@700&display=swap");
+@font-face {
+  font-family: 'janna';
+  src: url(../fonts/Janna.ttf);
+}
+/*=============== DIRECTION ===============*/
+html{
+  direction: ltr;
+}
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(195, 100%, 30%);
+  --gradient-color: linear-gradient(90deg,
+                    hsl(210, 55%, 20%),
+                    hsl(192, 62%, 25%));
+  --title-color: hsl(210, 52%, 20%);
+  --text-color: hsl(210, 24%, 15%);
+  --white-color: #fff;
+  --body-color: hsl(210, 55%, 85%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+
+  /* --body-font: "Poppins", sans-serif;
+  --second-font: "Lora", serif; */
+  /* --body-font: "janna";
+  --second-font: "janna"; */
+  --body-font: "Cairo", sans-serif;
+  --second-font:  "Cairo", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  
+}
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(220 , 24% , 15%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(220 , 24% , 25%);
+
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 70px;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  width: 36px;
+  padding-top: 30px;
+}
+
+.nav__close,
+.nav__toggle{
+  display: inline-flex;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1023px) {
+  .nav__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    box-shadow: 0 1px 16px hsla(210 , 55% , 24% ,  .1);
+    padding-block: 3.5rem  2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    transition: top 0.4s;
+  }
+  
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.nav__link{
+  color: var(--title-color);
+  transition: color .3s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__buttons{
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.nav__button-ghost{
+  display: inline-block;
+  color: var(--title-color);
+  background-color: hsla( 0 , 0% , 100% ,.3 );
+  padding: 0.7rem  2rem;
+  border: 2px solid var(--title-color);
+  border-radius: 0.75rem;
+  white-space: nowrap;
+}
+
+
+
+.nav__buttons p{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+/* Show menu */
+.show-menu{
+  top: 0;
+}
+
+/* Change background header */
+.bg-header{
+  box-shadow: 0 1px 16px hsla(210 , 55% , 24% , .12);
+}
+
+/*=============== HOME ===============*/
+.home{
+  position: relative;
+
+}
+
+.home__container{
+  padding-top: 8rem;
+  height: 100vh;
+}
+
+.home__content{
+  position: relative;
+  z-index: 2;
+}
+
+.home__data{
+  display: grid;
+  row-gap: 0.5rem;
+  width: fit-content;
+  text-align: center;
+}
+
+.home__subtitle{
+  font-size: 1.2rem;
+  color: var(--first-color);
+  /* letter-spacing: 3px; */
+  font-weight: bold;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  color: var(--title-color);
+  width: 200px;
+}
+
+
+.home__bird-1,
+.home__bird-2{
+  position: absolute;
+  width: 60px;
+}
+
+.home__bird-1{
+  bottom: -6rem;
+  rotate: -30deg;
+}
+
+.home__bird-2{
+  top: -2.5rem;
+  rotate: -15deg;
+  left: 13rem;
+}
+
+.home__images{
+  z-index: 1;
+}
+
+.home__images img{
+  position: absolute;
+  max-width: initial;
+  width: 600px;
+  left: -7rem;
+  bottom: 0;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .home__title{
+    font-size: 2rem;
+  }
+  .home__bird-2 {
+    left: 14rem ;
+}
+
+  
+}
+
+/* For taller devices */
+@media screen and (max-width : 376px) and (min-height: 800px) {
+  .home__container{
+    padding-top: 20rem;
+  }
+  .home__images img{
+    width: 700px;
+    left: -12rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width : 480px) {
+  .home__content{
+    max-width: 305px;
+  }
+
+  .home__images img{
+    width: initial;
+    left: 0;
+  }
+
+  .nav__logo{
+    padding-top: 30px;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px) {
+  .nav__logo{
+    padding-top: 0;
+    }
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+    column-gap: 4rem;
+  }
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+
+  .nav__menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__list{
+    flex-direction: row;
+    column-gap: 5rem;
+    width: 100%;
+  }
+  .nav__buttons{
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  /* .nav__logo{
+    width: 48px;
+  } */
+  /* .nav__button-ghost{
+    width: 176px;
+  } */
+
+  .home__content{
+    max-width: 550px;
+  }
+
+  .home__data{
+    row-gap: 1rem;
+    padding-left: 3rem;
+  }
+
+.home__title{
+  width: 320px;
+}
+
+  .home__subtitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+
+
+  /* .home__description{
+    margin-bottom: 3rem;
+  } */
+
+  .container{
+    max-width: initial;
+  }
+
+  .home__container{
+    height: 700px;
+    padding-top: 10rem;
+  }
+
+  .home__bird-2{
+    left: 25rem;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 750px;
+  }
+}
+
+ @media screen and (min-width: 1160px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 850px;
+  }
+
+}
+
+@media screen and (min-width: 1380px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 950px;
+  }
+
+}
+@media screen and (min-width: 1560px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 1050px;
+  }
+
+
+  .home__subtitle{
+    font-size: 25px;
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+    column-gap: 4rem;
+  }
+
+  .home__bird-2{
+    right: -20rem;
+  }
+
+
+}
+
+@media screen and (min-width: 1740px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 1150px;
+  }
+
+}
+@media screen and (min-width: 1930px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 1250px;
+  }
+
+}
+
+@media screen and (min-width: 2100px) {
+
+  .home__container{
+    padding-top: 10rem;
+    height: 1350px;
+  }
+
+}
+
+
+.ar-home__images{
+
+-webkit-transform: scaleX(-1) !important;
+transform: scaleX(-1) !important;
+/* right: -7rem; */
+left: initial;
+}
+
+
+
+.ar-home__bird-1{
+  
+  rotate: 30deg !important;
+  -webkit-transform: scaleX(-1) !important;
+  transform: scaleX(-1) !important;
+
+}
+
+.ar-home__bird-2{
+  left: initial !important;
+  right: 13rem !important;
+  rotate: 15deg !important;
+
+  -webkit-transform: scaleX(-1) !important;
+  transform: scaleX(-1) !important;
+}
+
+.ar-header{
+  right: 0;
+ 
+}
+
+.home__data{
+  padding-right: 3rem;
+}
+
+
+
+
+
+
+
+/*
+@media screen and (min-width: 1300px) {
+
+  .home__images img{
+    bottom: -15rem;
+  }
+}
+
+  @media screen and (min-width: 1450px) {
+
+    .home__images img{
+      bottom: -20rem;
+    }
+
+} */
+
+/* For 2K resolutions (2048 x 1152) */
