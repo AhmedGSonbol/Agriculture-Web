@@ -15,11 +15,15 @@
       <link rel="shortcut icon" href="assets/img/Zera3a.svg" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-      
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin=""> -->
+
+      <!--=============== FONTAWESOME ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+      <!--=============== GOOGLE FONTS ===============-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
 
       <title>Faculty of agriculture damanhour univercity</title>
    </head>
@@ -56,20 +60,25 @@
 
             <div class="nav__buttons">
                <a href="#" class="nav__button-ghost" data-i18n="login">LOGIN</a>
-                  <p id="langTrigger" data-i18n="lang">ع</p>
+               <div class="lang-container" id="langTrigger">
+                  <i class="fa-solid fa-earth-americas fa-xl"></i>
+                  <p  data-i18n="lang">ع</p>
+               </div>
+               
+                  
             </div>
 
             
             
             <div class="nav__close" id="nav-close">
-               <i class="ri-close-line"></i>
+               <i class="fa-solid fa-x" style="color: #001c38;"></i>
             </div>
    
 
          </div>
 
          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
+            <i class="fa-solid fa-bars" style="color: #001c38;"></i>
          </div>
          
       </nav>

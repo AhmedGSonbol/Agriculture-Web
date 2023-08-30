@@ -8,13 +8,13 @@ const trans = {
         mainTitle : 'Faculty Of Agriculture',
         subTitle : 'Damanhour University',
         login : 'LOGIN',
-        lang : 'EN'
+        lang : 'ع'
     },
     ar : {
         mainTitle : 'كلية الزراعة',
         subTitle : 'جامعة دمنهور',
         login : 'تسجيل الدخول',
-        lang : 'ع'
+        lang : 'EN'
     }
 };
 
@@ -122,23 +122,27 @@ const setLanguage = (languages) => {
 //     const language = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
 //     setLanguage(language);
 //   });
-
+// localStorage.clear()
 langTrigger.addEventListener('click', () => {
 
-    if(localStorage.getItem('lang') === 'en'){
+const lg = localStorage.getItem('lang') 
+
+    if(lg === 'en' && lg !== null){
 
         localStorage.setItem('lang','ar')
        // document.styleSheets[1].disabled = false
         
     }
-    else{
+    else if(lg === 'ar' && lg !== null){
         localStorage.setItem('lang','en')
         //document.styleSheets[1].disabled = true
         
     }
+    else{
+        localStorage.setItem('lang','ar')
+    }
     //setLanguage(localStorage.getItem('lang'));
     location.reload()
-    console.log(localStorage.getItem('lang'));
 
 })
 
