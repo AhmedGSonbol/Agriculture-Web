@@ -99,7 +99,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  margin-inline: 3rem;
+  margin-inline: 1.5rem;
 }
 
 .main {
@@ -686,7 +686,8 @@ a {
 }
 
 .sections .container {
-  padding: 6%;
+  /* padding: 6%; */
+  padding: 20px 0;
   color: white;
   font-weight: 600;
 }
