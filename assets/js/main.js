@@ -86,7 +86,16 @@ if(languages === 'en'){
 }
 
 
+/*=============== SHOW DROPDOWN LIST ITEMS ===============*/
 
+// let lists = document.querySelectorAll(".nav__item")
+
+// lists.forEach(e => {
+//     e.addEventListener('click' , () => {
+//         let item = document.getElementById('dropdown__list-id')
+//         item.classList.add("show-dropdown__list")
+//     })
+// })
 
 
 

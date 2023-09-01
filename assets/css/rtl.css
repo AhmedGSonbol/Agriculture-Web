@@ -104,4 +104,11 @@ html{
             right: 25rem;
             left: initial;
           }
+
+          .nav__menu {
+            right: 150px;
+            left: initial;
+        }
       } 
+
+      
