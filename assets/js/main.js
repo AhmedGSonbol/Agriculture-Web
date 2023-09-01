@@ -56,10 +56,10 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
     
 }
-navLink.forEach(n => {
-    n.addEventListener('click',linkAction)
+// navLink.forEach(n => {
+//     n.addEventListener('click',linkAction)
     
-});
+// });
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
@@ -88,16 +88,30 @@ if(languages === 'en'){
 
 /*=============== SHOW DROPDOWN LIST ITEMS ===============*/
 
-// let lists = document.querySelectorAll(".nav__item")
+// let lists = document.querySelectorAll(".nav__item ul")
 
 // lists.forEach(e => {
+//     console.log(e);
 //     e.addEventListener('click' , () => {
 //         let item = document.getElementById('dropdown__list-id')
 //         item.classList.add("show-dropdown__list")
 //     })
 // })
+  
+// // 
+
+//   function checkMediaQuery() {
+//     if (window.innerWidth > 1023) {
 
 
+
+//     }else{
+
+//     }
+//   }
+  
+//   // Add a listener for when the window resizes
+//   window.addEventListener('resize', checkMediaQuery);
 
 
 

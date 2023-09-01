@@ -19,7 +19,10 @@ html{
   --title-color: hsl(210, 52%, 20%);
   --text-color: hsl(210, 24%, 15%);
   --white-color: #fff;
-  --body-color: hsl(210, 55%, 85%);
+  
+  --body-color: hsl(210, 55%, 90%);
+  /* --body-color: #C0E6BA; */
+  --button-color:#32D230;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -96,7 +99,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  margin-inline: 3rem;
 }
 
 .main {
@@ -147,7 +150,24 @@ a {
     flex-direction: column;
     row-gap: 2.5rem;
     transition: top 0.4s;
+    overflow-y: auto;
+    max-height: 400px
+
   }
+
+  .nav__list li{
+    position: relative;
+  }
+
+  .nav__list ul li{
+    text-align: center;
+  }
+
+  .nav__list ul{
+    width: 100%;
+  }
+
+
   
 }
 
@@ -158,14 +178,7 @@ a {
   row-gap: 2rem;
 }
 
-.nav__link{
-  color: var(--title-color);
-  transition: color .3s;
-}
 
-.nav__link:hover{
-  color: var(--first-color);
-}
 
 .nav__buttons{
   display: flex;
@@ -209,46 +222,76 @@ a {
 }
 
 
-.nav__list ul{
+.nav__link
+{
+  color: var(--title-color);
+  transition: color .3s;
+}
+
+.nav__list  ul .nav__link{
+  padding-right: 20px;
+}
+
+ .nav__list ul li:hover > .nav__link{
+  color: var(--first-color);
+  transition: padding .3s;
+   padding-left: 10px; 
+  padding-right: 10px;
+}
+
+.nav__menu ul ul{
   position: absolute;
-  top: 50px;
+  top: 80px;
   opacity: 0;
   visibility: hidden;
+  /* opacity: 1;
+  visibility: visible;
+  top: 30px; */
 }
 
+/* .nav__link:target  ul{
+  top: 0;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+} */
 
-.nav__list li:hover > ul{
-  top: 30px;
+
+.nav__menu ul li:hover > ul{
+  top: 40px;
   opacity: 1;
   visibility: visible;
   transition: .3s linear;
 }
 
-.nav__list ul li:hover > ul{
+.nav__menu ul ul li:hover > ul{
   top: 0px;
-  opacity: 1;
-  visibility: visible;
-  transition: .3s linear;
+
 }
+
 
 .nav__list ul{
-  background-color: coral;
-  border-radius: 7px;
+  background-color: skyblue;
+  border-radius: 4px;
   min-width: 150px;
 }
 
-.nav__list ul ul{
+/* .nav__list ul ul{
   position: absolute;
   background-color: blue;
   width: 100%;
   top: 0;
   left: 0;
-}
+} */
 
 .nav__list ul li{
   padding: 10px;
-  display: list-item;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: relative;
+  cursor: pointer;
   /* border: 1px solid #042331; */
 
   /* border: 1px solid #042331;
@@ -264,9 +307,9 @@ a {
   color: white;
 }
 
-.nav__list ul li a{
-  line-height: 50px;
-}
+/* .nav__list ul li a{
+  line-height: 20px;
+} */
 
 .nav__list ul ul{
   border-top: none;
@@ -446,7 +489,7 @@ a {
     width: calc(100% - 150px);
     top: 1.5rem;
     display: inline-flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
   }
 /*
@@ -670,9 +713,9 @@ a {
 
 
 
-.sections .container .intro .servicebutton {
+.sections .container  .servicebutton {
   color: white;
-  background: #09aff4;
+  background: var(--button-color);
   font-size: 18px;
   font-weight: 600;
   display: inline-flex;
@@ -687,22 +730,22 @@ a {
 
 }
 
-.sections .container .intro .servicebutton p {
+.sections .container  .servicebutton p {
   margin: 0;
 
 }
 
-.sections .container .intro .servicebutton i {
+.sections .container  .servicebutton i {
   margin-left: 2px;
 
 }
 
-.sections .container .intro .servicebutton span {
+.sections .container  .servicebutton span {
 
   max-height: 30px;
 }
 
-.sections .container .intro .servicebutton:hover {
+.sections .container  .servicebutton:hover {
   background-color: transparent;
   color: #09aff4;
   cursor: pointer;
@@ -710,12 +753,12 @@ a {
 
 }
 
-.sections .container .intro .servicebutton:hover i {
+.sections .container  .servicebutton:hover i {
   color: #09aff4;
 
 }
 
-.sections .container .intro .servicebutton:hover i {
+.sections .container  .servicebutton:hover i {
 
   transition: 0.7s;
   transform: translateX(4px);
@@ -839,7 +882,7 @@ border: 1px solid #09aff4;
   /* background-color: #e3f2fd; */
   background-color: var(--body-color);
   justify-content: center;
-  padding: 6%;
+  padding: 1.5rem;
   align-items: center;
   margin: auto;
 
@@ -960,7 +1003,7 @@ padding: 4px;
   margin-left: 3%;
   color: white;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   background: rgba(6, 9, 34, 0.7);
   border-radius: 5rem;
@@ -986,6 +1029,7 @@ padding: 4px;
 
 .about-image img
 {
+  width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -1015,7 +1059,8 @@ padding: 4px;
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #23239b;
+    /* background-color: #23239b; */
+    background-color: var(--button-color);
     font-size: 19px;
     text-decoration: none;
     border-top-right-radius: 17px;
@@ -1053,10 +1098,10 @@ padding: 4px;
     /* position: relative; */
 }
 
-.container-a
+/* .container-a
 {
-    padding: 10px 20px;
-}
+    padding: 10px 1.5re;
+} */
 
 /* =============== COUNTER =============== */
 
@@ -1324,7 +1369,7 @@ footer .blackline div {
       flex-direction: column;
   }
 
-  .sections .container .intro .servicebutton {
+  .sections .container  .servicebutton {
       max-width: fit-content;
       margin-bottom: 30px;
   }
