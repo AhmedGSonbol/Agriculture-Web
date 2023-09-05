@@ -1030,7 +1030,7 @@ ul {
   }
   .home__title{
     
-    padding-left: 15px;
+    /* padding-left: 15px; */
 
     background: -webkit-linear-gradient(0deg,#000,var(--button-color));
     -webkit-background-clip: text;
@@ -1092,7 +1092,7 @@ ul {
   
   /*=============== BREAKPOINTS ===============*/
   /* Navigation for mobile devices */
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     .nav__menu{
       /* z-index: -10; */
       position: fixed;
@@ -1165,9 +1165,9 @@ ul {
     top: var(--header-height);
   }
   /* For small devices */
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 340px) {
     .container {
-      margin-inline: 1rem;
+      margin-inline: 0rem;
     }
     .home__title{
       font-size: 2.5rem;
@@ -1175,6 +1175,10 @@ ul {
     .home__bird-2 {
       display: none;
   }
+
+  .home__bird-1 {
+    display: none;
+}
   
     
   }
@@ -1195,7 +1199,7 @@ ul {
   }
   
   /* For large devices */
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1025px) {
   
     .nav__list ul li:hover > .nav__link{
       color: var(--button-color);
@@ -1406,7 +1410,11 @@ ul {
     flex-direction: column ;
   }
   .home__bird-2 {
-    left: 17rem;
+    left: 16rem;
+}
+
+.home__bird-1 {
+  left: 1.5rem;
 }
 
     .counters > div
@@ -1727,7 +1735,7 @@ padding: 11%  5%;
 
 
 }
-#indecator2 {
+/* #indecator2 {
   width: 30px;
   height: 30px;
   border: none;
@@ -1742,4 +1750,4 @@ padding: 11%  5%;
 
 #indecator2 i{
   color: white;
-}
+} */
