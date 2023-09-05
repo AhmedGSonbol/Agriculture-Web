@@ -13,18 +13,8 @@ html {
 .home__title {
   padding-left: initial;
   padding-right: 15px;
-  /* width: 200px; */
 }
 
-/* .home__image-4{
-    content: url(../img/r-img-4.svg) !important;
-}
-.home__image-3{
-    content: url(../img/r-img-3.svg) !important;
-}
-.home__image-2{
-    content: url(../img/r-img-2.svg) !important;
-} */
 .about-image {
 
   margin-left: 40px;
@@ -184,6 +174,11 @@ padding-right: 6px;
   .home__bird-2 {
     right: 16rem;
     
+}
+
+.home__title {
+  padding-left: initial;
+  padding-right: 0;
 }
 
 }

@@ -1030,7 +1030,7 @@ ul {
   }
   .home__title{
     
-    /* padding-left: 15px; */
+    padding-left: 10px;
 
     background: -webkit-linear-gradient(0deg,#000,var(--button-color));
     -webkit-background-clip: text;
@@ -1409,6 +1409,12 @@ ul {
   .title{
     flex-direction: column ;
   }
+
+  .home__title{
+    
+    padding-left: 0;
+  }
+
   .home__bird-2 {
     left: 16rem;
 }
