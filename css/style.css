@@ -621,7 +621,7 @@ footer .container .links a {
 
     transition: padding 0.7s;
     padding-left: 2px;
-    padding-right: 5px;
+    padding-right: 4px;
     text-decoration: none;
     color: var(--main-links);
 }
@@ -635,8 +635,8 @@ footer .container .links i {
 }
 
 footer .container .links a:hover {
-padding-left: 10px;   
-padding-right: 1px;  
+padding-left: 6px;   
+padding-right: 0px;  
  
 
     color: var(--button-color)
@@ -803,6 +803,7 @@ ul {
   
   .nav__close,
   .nav__toggle{
+    padding: 10px;
     display: inline-flex;
     font-size: 1.25rem;
     color: var(--title-color);
@@ -855,9 +856,16 @@ ul {
   
   .nav__buttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     column-gap: 1rem;
     align-items: center;
+  }
+
+  .H_seperator{
+    display: inline-flex;
+    height: 25px;
+    width: 2px;
+    background: gainsboro;
   }
   
   /* .nav__button-ghost{
@@ -1085,10 +1093,12 @@ ul {
   }
   
   .lang-container{
-    position: absolute;
-    top: 5px;
-    left: 5px;
+    /* position: absolute; */
+    /* top: 5px; */
+    /* left: 5px; */
     }
+
+    
   
   /*=============== BREAKPOINTS ===============*/
   /* Navigation for mobile devices */
@@ -1111,6 +1121,7 @@ ul {
       max-height: 400px
   
     }
+
   
     input[type="checkbox"]:checked + ul {
       display: block;
@@ -1213,7 +1224,7 @@ ul {
       /* height: 0; */
       /* overflow: hidden; */
       position: absolute;
-      top: 30px;
+      top: 10px;
       /* visibility: hidden; */
       /* transition: 0.3s linear all; */
       /* transition: opacity 0.3s ease-out; */
@@ -1252,21 +1263,15 @@ ul {
     }
   
     .nav__toggle,
-    .nav__close{
+    .nav__close,
+    .H_seperator{
       display: none;
     }
   
-    /* .nav__menu{
-      position: fixed;
-      width: calc(100% - 150px);
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-    } */
   
     .nav__menu{
       position: absolute;
-      right: 50px;  /* logo width */
+      /* right: 50px;  logo width */
       width: calc(100% - 150px);
       display: inline-flex;
       align-items: center;
