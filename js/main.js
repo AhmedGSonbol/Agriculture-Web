@@ -65,6 +65,8 @@ gsap.from('.home__data',1.2,{opacity:0,y:-60,delay: 1});
 gsap.from('.home__bird-1',1.2,{opacity:0,x:-80,delay: 1.1});
 gsap.from('.home__bird-2',1.2,{opacity:0,x:80,delay: 1.2});
 
+
+
 const languages = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
 
 if(languages === 'en'){

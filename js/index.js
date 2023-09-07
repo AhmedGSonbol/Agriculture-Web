@@ -1,75 +1,125 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });   
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
- 
 
-  
- 
- //   Js code to Start Count
- let nums = document.querySelectorAll(".nums .num");
- let section = document.querySelector(".three");
- let started = false; 
- 
- window.onscroll = function () {
-   if (window.scrollY +200 >= section.offsetTop -100) {
-     if (!started) {
-       nums.forEach((num) => startCount(num));
-     }
-     started = true;
-   }
- };
- 
- function startCount(el) {
-   let goal = el.dataset.goal;
-   let count = setInterval(() => {
-     el.textContent++;
-     if (el.textContent == goal) {
-       clearInterval(count);
-     }
-   }, 2000 / goal);
- };
+
+
+
+//   Js code to Start Count
+let nums = document.querySelectorAll(".nums .num");
+let section = document.querySelector(".three");
+let started = false;
+
+window.onscroll = function () {
+  if (window.scrollY + 200 >= section.offsetTop - 100) {
+    if (!started) {
+      nums.forEach((num) => startCount(num));
+    }
+    started = true;
+  }
+};
+
+function startCount(el) {
+  let goal = el.dataset.goal;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 2000 / goal);
+};
+
 
 
 
 let list = document.querySelectorAll('.list');
 let itemBox = document.querySelectorAll('.itemBox');
 
-for(let i = 0; i<list.length; i++){
-    list[i].addEventListener('click', function(){
-        for(let j = 0; j<list.length; j++){
-            list[j].classList.remove('active');
-        }
-        this.classList.add('active');
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener('click', function () {
 
-        let dataFilter = this.getAttribute('data-filter');
+    for (let j = 0; j < list.length; j++) {
+      list[j].classList.remove('active');
+    }
+    this.classList.add('active');
 
-        for( let k = 0; k<itemBox.length; k++){
-            itemBox[k].classList.remove('active');
-            itemBox[k].classList.add('hide');
 
-            if(itemBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
-                itemBox[k].classList.remove('hide');
-                itemBox[k].classList.add('active');
-            }
-        }
+    for (let k = 0; k < itemBox.length; k++) {
+      itemBox[k].classList.remove('active');
+      itemBox[k].classList.add('hide');
 
-    });
+      let dataFilter = this.getAttribute('data-filter');
+
+
+      if (itemBox[k].getAttribute('data-item') == dataFilter) {
+        itemBox[k].classList.remove('hide');
+        itemBox[k].classList.add('active');
+      }
+    }
+
+    // lol();
+
+  });
 };
 
+function lol() {
+
+  // let dataFilter = document.querySelectorAll("[data-filter]");
+
+  list.forEach(l => {
+    if (l.classList.contains('active')) {
+
+      let attr = l.getAttribute('data-filter');
+
+      console.log(attr);
+
+      itemBox.forEach(item => {
+        item.classList.remove('active');
+        item.classList.add('hide');
 
 
 
+
+        if (item.getAttribute('data-item') == attr) {
+          console.log(item.getAttribute('data-item'));
+          item.classList.remove('hide');
+          item.classList.add('active');
+        }
+
+
+      })
+      console.log('yes')
+
+    }
+
+  })
+}
+
+
+window.addEventListener('load', () => {
+
+
+  // let rr = document.querySelectorAll('.home__images img')
+  // rr.forEach(element => {
+  //   console.log(element)
+
+  //   element.classList.add('show__home-images')
+  // });
+
+  lol();
+
+})
 
 
 
@@ -77,45 +127,45 @@ for(let i = 0; i<list.length; i++){
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 40,
-  
+
   loop: true,
-  centerSlide:'true',
-  fade:'true',
-  
+  centerSlide: 'true',
+  fade: 'true',
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  dynamicBullets:true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
- breakpoints:{
- 0:{
- slidesPerView:1,
- spaceBetween:40,
- },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
 
-600:{
- slidesPerView:2,
- spaceBetween:40,
-
-
- },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 40,
 
 
-
- 992:{
- slidesPerView:3,
- spaceBetween:40,
+    },
 
 
-},
+
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 40,
 
 
-},
+    },
+
+
+  },
 
 
 
