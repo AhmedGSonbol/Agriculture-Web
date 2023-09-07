@@ -67,7 +67,7 @@ gsap.from('.home__bird-2',1.2,{opacity:0,x:80,delay: 1.2});
 
 
 
-const languages = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
+var languages = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
 
 if(languages === 'en'){
     gsap.from('.home__image-4',1.2,{opacity:0,x:200,delay: 1.3});
@@ -82,10 +82,9 @@ if(languages === 'en'){
 
 const langTrigger = document.getElementById('langTrigger')
 
-
-
 langTrigger.addEventListener('click', () => {
 
+    languages = localStorage.getItem("lang") || "en";
 
     if(languages === 'en'){
 

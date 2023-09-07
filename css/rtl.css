@@ -100,6 +100,14 @@ padding-right: 6px;
   z-index: var(--z-fixed);
 }
 
+.gallery-close
+{
+  position: absolute;
+  top: 20px;
+  right: initial;
+  left: 10px;
+}
+
 /* #indecator2 {
 
   right: initial;

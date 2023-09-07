@@ -46,8 +46,12 @@ function startCount(el) {
 let list = document.querySelectorAll('.list');
 let itemBox = document.querySelectorAll('.itemBox');
 
+var imgList = [];
+
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener('click', function () {
+
+    imgList = [];
 
     for (let j = 0; j < list.length; j++) {
       list[j].classList.remove('active');
@@ -56,68 +60,64 @@ for (let i = 0; i < list.length; i++) {
 
 
     for (let k = 0; k < itemBox.length; k++) {
-      itemBox[k].classList.remove('active');
-      itemBox[k].classList.add('hide');
+      // itemBox[k].classList.remove('active');
+      itemBox[k].classList.remove('show-itemBox');
 
       let dataFilter = this.getAttribute('data-filter');
 
 
       if (itemBox[k].getAttribute('data-item') == dataFilter) {
-        itemBox[k].classList.remove('hide');
-        itemBox[k].classList.add('active');
+        itemBox[k].classList.add('show-itemBox');
+        // itemBox[k].classList.add('active');
+
+        
+
+
+        imgList.push(itemBox[k].getElementsByTagName('img')[0])
       }
     }
 
-    // lol();
+    imageClicked(imgList);
 
   });
 };
 
-function lol() {
 
-  // let dataFilter = document.querySelectorAll("[data-filter]");
+window.addEventListener('load', () => {
+
 
   list.forEach(l => {
     if (l.classList.contains('active')) {
 
       let attr = l.getAttribute('data-filter');
 
-      console.log(attr);
 
       itemBox.forEach(item => {
-        item.classList.remove('active');
-        item.classList.add('hide');
+        item.classList.remove('show-itemBox');
+        // item.classList.remove('active');
+        // item.classList.add('hide');
 
 
 
 
         if (item.getAttribute('data-item') == attr) {
-          console.log(item.getAttribute('data-item'));
-          item.classList.remove('hide');
-          item.classList.add('active');
+
+          item.classList.add('show-itemBox');
+
+          // item.classList.remove('hide');
+          // item.classList.add('active');
+
+          imgList.push(item.getElementsByTagName('img')[0])
         }
 
 
       })
-      console.log('yes')
 
     }
 
   })
-}
 
-
-window.addEventListener('load', () => {
-
-
-  // let rr = document.querySelectorAll('.home__images img')
-  // rr.forEach(element => {
-  //   console.log(element)
-
-  //   element.classList.add('show__home-images')
-  // });
-
-  lol();
+  imageClicked(imgList);
 
 })
 
@@ -167,17 +167,58 @@ var swiper = new Swiper(".slide-content", {
 
   },
 
-
-
-
-
-
-
 });
 
 
 
+// var imgList = Array.from(document.querySelectorAll('.itemBox img'));
+  var lightbox = document.getElementById('lightbox');
+  var lightBoxItem = document.getElementById('lightbox-item');
+  var currentSlideIndex;
+  var nextBtn = document.getElementById('nextBtn');
+  var prevBtn = document.getElementById('prevBtn');
+  var closeBtn = document.getElementById('closeBtn');
+  
+  function imageClicked(images){
+    for(var i = 0; i<images.length; i++){
+      images[i].addEventListener('click', function(e){
+          lightbox.style.display = 'flex';
+          var imgSrc = e.target.getAttribute('src');
+          currentSlideIndex =  images.indexOf(e.target);
+          lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+  
+      })
+    }
+  }
 
+
+  function nextSlide(){
+    currentSlideIndex++;
+    if(currentSlideIndex > imgList.length - 1){
+      currentSlideIndex = 0;
+    }
+    var imgSrc = imgList[currentSlideIndex].getAttribute('src')
+    lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+  }
+
+
+  function prevSlide(){
+    currentSlideIndex--;
+    if(currentSlideIndex < 0){
+      currentSlideIndex = imgList.length - 1;
+    }
+    var imgSrc = imgList[currentSlideIndex].getAttribute('src')
+    lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+  }
+
+
+  function closeSlide(){
+    lightbox.style.display = 'none';
+  }
+
+  nextBtn.addEventListener('click',nextSlide);
+  prevBtn.addEventListener('click',prevSlide);
+  closeBtn.addEventListener('click',closeSlide);
 
 
   // let btn = document.getElementById('indecator2');
