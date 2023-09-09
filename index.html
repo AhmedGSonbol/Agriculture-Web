@@ -15,12 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!--=============== CSSs ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <!--=============== META ===============-->
-    <meta name="description" content="كليه الزراعة بدمنهور هي احدي كليات جامعه دمنهور تم تأسيسها بمدينة دمنهور عام 1984 لتخدم محافظة البحيرة من الناحيه التعليمية حيث يلتحق بها طلاب محافظة البحيرة والبلاد المجاورة لها الذين يرغبون في دراسة علوم الزراعة">
+    <meta name="description"
+        content="كليه الزراعة بدمنهور هي احدي كليات جامعه دمنهور تم تأسيسها بمدينة دمنهور عام 1984 لتخدم محافظة البحيرة من الناحيه التعليمية حيث يلتحق بها طلاب محافظة البحيرة والبلاد المجاورة لها الذين يرغبون في دراسة علوم الزراعة">
     <meta name="keywords" content="كليه - زراعه - دمنهور - كليات - جامعه - دراسه">
 
 </head>
@@ -31,74 +34,108 @@
 
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
+        
+        <nav class="header-up container">
+
+
+
+            <span class="header__icons">
+                <a href=""><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+            </span>
+
+            <a href=""><i class="leaf fa-solid fa-leaf fa-lg"></i></a>
+
+            <span class="header__up-short-links">
+                <div class="lang-container" id="langTrigger">
+                    <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                    <a onclick="changeLang()">العربيه</a>
+                </div> 
+                <span class="H_seperator"></span>
+                <div>
+                    <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                    <a href="#">نتائج الطلاب</a>
+                </div>    
+                <span class="H_seperator"></span>
+                <div>
+                    <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                    <a href="#">الشكاوي و المقترحات</a>
+                </div>    
+                   
+
+            </span>
+
+
+        </nav>
+
         <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img loading="lazy" src="images/Zera3a.svg" alt="logo">
-            </a>
+            
 
 
             <div class="nav__menu" id="nav-menu">
                 <input type="checkbox" id="about">
                 <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Home
-                            </a>
-                            <span class="indecator"><label for="home"><i class="fa-solid fa-angle-down"></i></label></span>
-                            <input type="checkbox" id="home">
-                            <ul class="dropdown__list" id="dropdown__list-id">
-                                
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">sub
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-    
-    
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">more
-                                    </a>
-                                    <span class="indecator"><label for="more"><i
-                                                class="fa-solid fa-angle-right"></i></span></label>
-                                    <input type="checkbox" id="more">
-                                    <ul class="dropdown__list" id="dropdown__list-id">
-    
-                                        <li class="dropdown__item">
-                                            <a href="#" class="nav__link">sub
-                                            </a>
-    
-                                        </li>
-                                    </ul>
-    
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">sub
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">111111112222222223
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">sub
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                                </li>
-                                
-                            </ul>
-    
-                        </li>
-    
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Pricing
-    
-                            </a>
-                            <span class="indecator">
-                                <!-- <label for="Pricing"><i class="fa-solid fa-angle-down"></i></label> -->
-    
-                            </span>
-                            <!-- <input type="checkbox" id="Pricing">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home
+                        </a>
+                        <span class="indecator"><label for="home"><i class="fa-solid fa-angle-down"></i></label></span>
+                        <input type="checkbox" id="home">
+                        <ul class="dropdown__list" id="dropdown__list-id">
+
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">sub
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+
+
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">more
+                                </a>
+                                <span class="indecator"><label for="more"><i
+                                            class="fa-solid fa-angle-right"></i></span></label>
+                                <input type="checkbox" id="more">
+                                <ul class="dropdown__list" id="dropdown__list-id">
+
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">sub
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">111111112222222223
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">sub
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Pricing
+
+                        </a>
+                        <span class="indecator">
+                            <!-- <label for="Pricing"><i class="fa-solid fa-angle-down"></i></label> -->
+
+                        </span>
+                        <!-- <input type="checkbox" id="Pricing">
                     <ul class="dropdown__list" id="dropdown__list-id">
     
                        <li class="dropdown__item">topic 2</li>
@@ -111,123 +148,123 @@
                        <li class="dropdown__item">topic 12</li>
                        <li class="dropdown__item">topic 12</li>
                     </ul> -->
-    
-                        </li>
-    
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Events
-                            </a>
-                            <span class="indecator">
-    
-                            </span>
-    
-                        </li>
-    
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">contacts
-    
-                            </a>
-                            <span class="indecator">
-                                <label for="contacts"><i class="fa-solid fa-angle-down"></i></label>
-                            </span>
-                            <input type="checkbox" id="contacts">
-                            <ul class="dropdown__list" id="dropdown__list-id">
-    
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">sub
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-    
-    
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">sub
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                                </li>
-    
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">hello
-                                    </a>
-                                    <span class="indecator">
-                                        <label for="hello"><i class="fa-solid fa-angle-down"></i></label>
-                                    </span>
-    
-                                    <input type="checkbox" id="hello">
-                                    <ul class="dropdown__list" id="dropdown__list-id">
-    
-                                        <li class="dropdown__item">
-                                            <a href="#" class="nav__link">sub
-                                            </a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="#" class="nav__link">sub</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="#" class="nav__link">subs
-                                            </a>
-                                            <span class="indecator">
-                                                <label for="world"><i class="fa-solid fa-angle-down"></i></label>
-                                            </span>
-                                            <input type="checkbox" id="world">
-                                            <ul class="dropdown__list" id="dropdown__list-id">
-    
-                                                <li class="dropdown__item">
-                                                    <a href="#" class="nav__link">sub
-                                                    </a>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <a href="#" class="nav__link">sub</a>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <a href="#" class="nav__link">sub
-                                                    </a>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <a href="#" class="nav__link">hello
-                                                    </a>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <a href="#" class="nav__link">sub
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="#" class="nav__link">hello
-                                            </a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="#" class="nav__link">sub
-                                            </a>
-                                        </li>
-                                    </ul>
-    
-    
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">1145646
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-    
-    
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">sub
-                                    </a>
-                                    <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                                </li>
-                            </ul>
-    
-                        </li>
 
-                  
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Events
+                        </a>
+                        <span class="indecator">
+
+                        </span>
+
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">contacts
+
+                        </a>
+                        <span class="indecator">
+                            <label for="contacts"><i class="fa-solid fa-angle-down"></i></label>
+                        </span>
+                        <input type="checkbox" id="contacts">
+                        <ul class="dropdown__list" id="dropdown__list-id">
+
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">sub
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+
+
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">sub
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                            </li>
+
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">hello
+                                </a>
+                                <span class="indecator">
+                                    <label for="hello"><i class="fa-solid fa-angle-down"></i></label>
+                                </span>
+
+                                <input type="checkbox" id="hello">
+                                <ul class="dropdown__list" id="dropdown__list-id">
+
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">subs
+                                        </a>
+                                        <span class="indecator">
+                                            <label for="world"><i class="fa-solid fa-angle-down"></i></label>
+                                        </span>
+                                        <input type="checkbox" id="world">
+                                        <ul class="dropdown__list" id="dropdown__list-id">
+
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">sub
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">sub</a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">sub
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">hello
+                                                </a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">sub
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">hello
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">1145646
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+
+
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="nav__link">sub
+                                </a>
+                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                            </li>
+                        </ul>
+
+                    </li>
+
+
 
                 </ul>
 
 
 
-                
+
 
 
 
@@ -238,15 +275,13 @@
 
             </div>
 
-            
-            <div class="nav__buttons">
-                <div class="lang-container" id="langTrigger">
-                    <i class="fa-solid fa-earth-americas fa-xl"></i>
-                    <p>العربية</p>
-                </div>
+            <a href="#" class="nav__logo">
+                <img src="images/Zera3a.svg" alt="logo">
+            </a>
 
-                <span class="H_seperator">
-                </span>
+
+            <div class="nav__buttons">
+                
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fa-solid fa-bars" style="color: #001c38;"></i>
@@ -255,7 +290,7 @@
 
 
 
-            
+
 
         </nav>
 
@@ -265,7 +300,10 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home">
-            <div class="home__container ">
+
+            <!-- <div class="home__container ">
+
+
                 <div class="home__content container">
                     <div class="home__data">
 
@@ -276,14 +314,10 @@
                             <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
                         </span>
 
-                        <span class="title">
-                            <h3 class="home__title-up">
-                                Faculty Of
-                            </h3>
+
                             <h1 class="home__title">
-                                Agriculture
+                                Faculty Of Agriculture
                             </h1>
-                        </span>
 
 
 
@@ -303,6 +337,40 @@
                     <img  src="images/img-2.svg" alt="image" class="home__image-2">
 
                 </div>
+            </div> -->
+
+
+            <!-- Slider main container -->
+            <div class="myHomeSwiper home__container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images/vegatables1.jpg" alt="ss">
+                        <h1>I am here .</h1>
+                        <p>i know , hello there !</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/tomato3.jpg" alt="ss">
+                        <h1>Hello There</h1>
+                        <p>I am fine , What about U?</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/fruit3.jpg" alt="ss">
+                        <h1>I am fine too , Thanks</h1>
+                        <p>U R Welcome !</p>
+                    </div>
+                    
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
         </section>
 
@@ -336,19 +404,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -366,19 +440,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -396,19 +476,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -426,19 +512,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -456,19 +548,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -486,19 +584,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -516,19 +620,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -546,19 +656,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -576,19 +692,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -606,19 +728,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -636,19 +764,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -666,19 +800,25 @@
                                     | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
                                             Moore</a></div>
                                 </h5>
-          
+
                                 <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
                                 </h2>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
+                                        voluptates
                                         molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
+                                        dolorem
+                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
+                                        soluta
+                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
+                                        Harum,
+                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
+                                        maiores
+                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
+                                        doloribus!
                                         Explicabo.
-          
+
                                     </p>
                                 </div>
                                 <span class="readmore"> <a href="#"> Read more &nbsp; <i
@@ -690,8 +830,8 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-next "></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next "></div>
+                <div class="swiper-button-prev"></div> -->
                 <div class="swiper-pagination"></div>
 
             </div>
@@ -709,7 +849,7 @@
         <div class="container">
             <section class="about">
                 <div class="about-image" data-aos="fade-up">
-                    <img  src="images/Captured.PNG"  alt="">
+                    <img src="images/Captured.PNG" alt="">
                 </div>
                 <div class="about-content" data-aos="fade-up">
                     <h3>Lorem, ipsum dolor.</h3>
@@ -744,7 +884,7 @@
                     <a href="" class="read-more">Read More</a>
                 </div>
                 <div class="about-image about-img2-rtl" data-aos="fade-up">
-                    <img  src="images/Captured.PNG" alt="">
+                    <img src="images/Captured.PNG" alt="">
                 </div>
             </section>
         </div>
@@ -800,7 +940,7 @@
                     <div class="testimonial mySwiper" data-aos="fade-up">
                         <div class="testi-content swiper-wrapper">
                             <div class="slide swiper-slide">
-                                <img src="images/Captured.PNG" class="image"  alt="">
+                                <img src="images/Captured.PNG" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Mohamed Elwan</h2>
                                     <h3>Excellent</h3>
@@ -808,7 +948,7 @@
                                 </div>
                             </div>
                             <div class="slide swiper-slide">
-                                <img src="images/Captured.PNG" class="image"  alt="">
+                                <img src="images/Captured.PNG" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Ahmed Sonbol</h2>
                                     <h3>Exellent</h3>
@@ -816,7 +956,7 @@
                                 </div>
                             </div>
                             <div class="slide swiper-slide">
-                                <img src="images/Captured.PNG" class="image"  alt="">
+                                <img src="images/Captured.PNG" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Mohamed Emara</h2>
                                     <h3>Exellent</h3>
@@ -824,7 +964,7 @@
                                 </div>
                             </div>
                             <div class="slide swiper-slide">
-                                <img src="images/Captured.PNG" class="image"  alt="">
+                                <img src="images/Captured.PNG" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Shreef Mekawy</h2>
                                     <h3>Exellent</h3>
@@ -889,7 +1029,7 @@
                 <div id="lightbox">
                     <div id="lightbox-item">
                         <i id="prevBtn" class="far fa-arrow-alt-circle-left gallery-left"></i>
-                        
+
                         <i id="closeBtn" class="far fa-times-circle gallery-close"></i>
                         <i id="nextBtn" class="far fa-arrow-alt-circle-right gallery-right"></i>
                     </div>
@@ -898,7 +1038,7 @@
             </div>
             <a href="" class="read-more">View More</a>
         </section>
-        
+
     </div>
     <!-- E N D   G A L L E R Y -->
 
@@ -980,7 +1120,9 @@
     </footer>
 
     <!-- S T A R T   B U T T O N -->
-    <!-- <button id="indecator2"><i class="fa-solid fa-arrow-up text-white"></i></button> -->
+    <span class="go-top-btn">
+        <i class="fas fa-arrow-circle-up fa-2xl"></i>
+    </span>
     <!-- E N D   B U T T O N -->
 
     <!-- E N D   F O O T E R -->

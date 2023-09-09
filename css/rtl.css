@@ -160,14 +160,9 @@ padding-right: 6px;
   }
 
   .home__bird-2 {
-    right: 21rem;
+    right: 25rem;
     left: initial;
   }
-
-  /* .nav__menu {
-    right: 150px;
-    left: initial;
-  } */
 
   .nav__list ul ul{
     right: 100%;
