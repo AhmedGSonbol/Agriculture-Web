@@ -14,6 +14,36 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+var homeswiper = new Swiper(".myHomeSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      // progressCircle.style.setProperty("--progress", 1 - progress);
+      // progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    }
+  }
+
+});
+
+
+
 
 
 //   Js code to Start Count
@@ -70,7 +100,7 @@ for (let i = 0; i < list.length; i++) {
         itemBox[k].classList.add('show-itemBox');
         // itemBox[k].classList.add('active');
 
-        
+
 
 
         imgList.push(itemBox[k].getElementsByTagName('img')[0])
@@ -137,10 +167,10 @@ var swiper = new Swiper(".slide-content", {
     clickable: true,
     dynamicBullets: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 
   breakpoints: {
     0: {
@@ -172,67 +202,72 @@ var swiper = new Swiper(".slide-content", {
 
 
 // var imgList = Array.from(document.querySelectorAll('.itemBox img'));
-  var lightbox = document.getElementById('lightbox');
-  var lightBoxItem = document.getElementById('lightbox-item');
-  var currentSlideIndex;
-  var nextBtn = document.getElementById('nextBtn');
-  var prevBtn = document.getElementById('prevBtn');
-  var closeBtn = document.getElementById('closeBtn');
-  
-  function imageClicked(images){
-    for(var i = 0; i<images.length; i++){
-      images[i].addEventListener('click', function(e){
-          lightbox.style.display = 'flex';
-          var imgSrc = e.target.getAttribute('src');
-          currentSlideIndex =  images.indexOf(e.target);
-          lightBoxItem.style.backgroundImage = `url(${imgSrc})`
-  
-      })
-    }
+var lightbox = document.getElementById('lightbox');
+var lightBoxItem = document.getElementById('lightbox-item');
+var currentSlideIndex;
+var nextBtn = document.getElementById('nextBtn');
+var prevBtn = document.getElementById('prevBtn');
+var closeBtn = document.getElementById('closeBtn');
+
+function imageClicked(images) {
+  for (var i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', function (e) {
+      lightbox.style.display = 'flex';
+      var imgSrc = e.target.getAttribute('src');
+      currentSlideIndex = images.indexOf(e.target);
+      lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+
+    })
   }
+}
 
 
-  function nextSlide(){
-    currentSlideIndex++;
-    if(currentSlideIndex > imgList.length - 1){
-      currentSlideIndex = 0;
-    }
-    var imgSrc = imgList[currentSlideIndex].getAttribute('src')
-    lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+function nextSlide() {
+  currentSlideIndex++;
+  if (currentSlideIndex > imgList.length - 1) {
+    currentSlideIndex = 0;
   }
+  var imgSrc = imgList[currentSlideIndex].getAttribute('src')
+  lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+}
 
 
-  function prevSlide(){
-    currentSlideIndex--;
-    if(currentSlideIndex < 0){
-      currentSlideIndex = imgList.length - 1;
-    }
-    var imgSrc = imgList[currentSlideIndex].getAttribute('src')
-    lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+function prevSlide() {
+  currentSlideIndex--;
+  if (currentSlideIndex < 0) {
+    currentSlideIndex = imgList.length - 1;
   }
+  var imgSrc = imgList[currentSlideIndex].getAttribute('src')
+  lightBoxItem.style.backgroundImage = `url(${imgSrc})`
+}
 
 
-  function closeSlide(){
-    lightbox.style.display = 'none';
+function closeSlide() {
+  lightbox.style.display = 'none';
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+closeBtn.addEventListener('click', closeSlide);
+
+
+// indecator
+
+const goTopBtn = document.querySelector('.go-top-btn');
+
+window.addEventListener('scroll', checkHeight);
+
+function checkHeight() {
+  if (window.scrollY > 200) {
+    goTopBtn.style.display = 'flex';
+  } else {
+    goTopBtn.style.display = 'none';
   }
+}
 
-  nextBtn.addEventListener('click',nextSlide);
-  prevBtn.addEventListener('click',prevSlide);
-  closeBtn.addEventListener('click',closeSlide);
-
-
-  // let btn = document.getElementById('indecator2');
-  // window.onscroll = function(){
-  //   if(scrollY >= 100){
-  //   btn.style.display = 'block';
-  //   } else {
-  //   btn.style.display = 'none';
-  //   }
-  // }
-  // btn.onclick = function(){
-  //   scroll({
-  //   left: 0,
-  //   top: 0,
-  //   behavior: "smooth"
-  //   })
-  // }
+goTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})

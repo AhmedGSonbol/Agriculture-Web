@@ -79,23 +79,25 @@ if(languages === 'en'){
 
 /*=============== CHANGE LANGUAGE ===============*/
 
+function changeLang(){
+    // const langTrigger = document.getElementById('langTrigger')
 
-const langTrigger = document.getElementById('langTrigger')
-
-langTrigger.addEventListener('click', () => {
-
-    languages = localStorage.getItem("lang") || "en";
-
-    if(languages === 'en'){
-
-        localStorage.setItem('lang','ar')
-        location.replace('index-rtl.html')
-    }
-    else{
-        localStorage.setItem('lang','en')
-        location.replace('index.html')
-        
-    }    
+    // langTrigger.addEventListener('click', () => {
     
+        languages = localStorage.getItem("lang") || "en";
+    
+        if(languages === 'en'){
+    
+            localStorage.setItem('lang','ar')
+            location.replace('index-rtl.html')
+        }
+        else{
+            localStorage.setItem('lang','en')
+            location.replace('index.html')
+            
+        }    
+        
+    
+    // })
+}
 
-})
