@@ -54,7 +54,7 @@ const bgHeader = () =>{
     const header_up = document.getElementById('header-up')
 
 
-    if(this.scrollY >= 125)
+    if(this.scrollY >= 143)
     {
         header.classList.add('bg-header')
         header_up.classList.add('remove-header-up-shadow')

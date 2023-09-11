@@ -1510,9 +1510,9 @@ padding-right: 20px;
     
   } */
 
-  .myHomeSwiper {
+  /* .myHomeSwiper {
     margin-top: 170px ;
-  }
+  } */
 
   footer .container .contents {
     gap: 40px;
@@ -1610,7 +1610,7 @@ padding-right: 20px;
   .nav__list .nav__item {
     display: inline-block;
     margin-right: 20px;
-    padding: 25px;
+    padding: 16px;
   }
 
   .nav__list .nav__item>a {
