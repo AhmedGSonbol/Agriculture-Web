@@ -35,180 +35,192 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         
-        <nav class="header-up container">
+        <nav class="header-up" id="header-up">
+
+            <div class="container">
 
 
+                <span class="header__icons">
+                    <a href=""><i class="fa-brands fa-facebook-f fa-m"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-m"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube fa-m"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-m"></i></a>
+                </span>
+    
+                <a href=""><i class="leaf fa-solid fa-leaf fa-lg"></i></a>
+    
+                <span class="header__up-short-links">
+                    <div class="lang-container" id="langTrigger">
+                        <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                        <a onclick="changeLang()">عربي</a>
+                    </div> 
+                    <span class="H_seperator"></span>
+                    <div>
+                        <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                        <a href="#">Exams Results</a>
+                    </div>    
+                    <span class="H_seperator"></span>
+                    <div>
+                        <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                        <a href="#">Complains</a>
+                    </div>    
+                       
+    
+                </span>
 
-            <span class="header__icons">
-                <a href=""><i class="fa-brands fa-facebook-f fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-            </span>
-
-            <a href=""><i class="leaf fa-solid fa-leaf fa-lg"></i></a>
-
-            <span class="header__up-short-links">
-                <div class="lang-container" id="langTrigger">
-                    <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
-                    <a onclick="changeLang()">العربيه</a>
-                </div> 
-                <span class="H_seperator"></span>
-                <div>
-                    <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
-                    <a href="#">نتائج الطلاب</a>
-                </div>    
-                <span class="H_seperator"></span>
-                <div>
-                    <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
-                    <a href="#">الشكاوي و المقترحات</a>
-                </div>    
-                   
-
-            </span>
-
-
+            </div>
         </nav>
 
         <nav class="nav container">
             
 
+            <nav class="logo-title">
 
-            <div class="nav__menu" id="nav-menu">
-                <input type="checkbox" id="about">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home
-                        </a>
-                        <span class="indecator"><label for="home"><i class="fa-solid fa-angle-down"></i></label></span>
-                        <input type="checkbox" id="home">
-                        <ul class="dropdown__list" id="dropdown__list-id">
+                <div class="title">
 
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
+                    <h1>Faculty Of Agricuture</h1>
+                    <a href="#">Damanhour University</a>
+                </div>
+
+                <a href="#" class="nav__logo">
+                    <img src="images/Zera3a.svg" alt="logo">
+                </a>
+            </nav>
+            
+
+            
+
+            <div class="header-contacts-info">
+                <div class="header-contact">
+                    <div class="header-contact-icon">
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                    </div>
+                    <div class="header-contact-data">
+                        <h4>Call Us</h4>
+                        <p>201064410263</p>
+                    </div>
+                </div>
+
+                <div class="header-contact">
+                    <div class="header-contact-icon">
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                    <div class="header-contact-data">
+                        <h4>Mail Us</h4>
+                        <p>zera3a@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <div class="float-nav-bar container">
+                <div class="home" >
+                    <div class="nav__menu" id="nav-menu">
+                        <input type="checkbox" id="about">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Home
                                 </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-
-
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">more
-                                </a>
-                                <span class="indecator"><label for="more"><i
-                                            class="fa-solid fa-angle-right"></i></span></label>
-                                <input type="checkbox" id="more">
+                                <span class="indecator"><label for="home"><i class="fa-solid fa-angle-down"></i></label></span>
+                                <input type="checkbox" id="home">
                                 <ul class="dropdown__list" id="dropdown__list-id">
-
+        
                                     <li class="dropdown__item">
                                         <a href="#" class="nav__link">sub
                                         </a>
-
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+        
+        
                                     </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">more
+                                        </a>
+                                        <span class="indecator"><label for="more"><i
+                                                    class="fa-solid fa-angle-right"></i></span></label>
+                                        <input type="checkbox" id="more">
+                                        <ul class="dropdown__list" id="dropdown__list-id">
+        
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">sub
+                                                </a>
+        
+                                            </li>
+                                        </ul>
+        
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">111111112222222223
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                                    </li>
+        
                                 </ul>
-
+        
                             </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
+        
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Pricing
+        
                                 </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">111111112222222223
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Pricing
-
-                        </a>
-                        <span class="indecator">
-                            <!-- <label for="Pricing"><i class="fa-solid fa-angle-down"></i></label> -->
-
-                        </span>
-                        <!-- <input type="checkbox" id="Pricing">
-                    <ul class="dropdown__list" id="dropdown__list-id">
+                                <span class="indecator">    
+                                </span>
     
-                       <li class="dropdown__item">topic 2</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                       <li class="dropdown__item">topic 12</li>
-                    </ul> -->
-
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Events
-                        </a>
-                        <span class="indecator">
-
-                        </span>
-
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">contacts
-
-                        </a>
-                        <span class="indecator">
-                            <label for="contacts"><i class="fa-solid fa-angle-down"></i></label>
-                        </span>
-                        <input type="checkbox" id="contacts">
-                        <ul class="dropdown__list" id="dropdown__list-id">
-
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-
-
+        
                             </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">hello
+        
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Events
                                 </a>
                                 <span class="indecator">
-                                    <label for="hello"><i class="fa-solid fa-angle-down"></i></label>
+        
                                 </span>
-
-                                <input type="checkbox" id="hello">
+        
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">contacts
+        
+                                </a>
+                                <span class="indecator">
+                                    <label for="contacts"><i class="fa-solid fa-angle-down"></i></label>
+                                </span>
+                                <input type="checkbox" id="contacts">
                                 <ul class="dropdown__list" id="dropdown__list-id">
-
+        
                                     <li class="dropdown__item">
                                         <a href="#" class="nav__link">sub
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+        
+        
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="nav__link">sub</a>
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
                                     </li>
+        
                                     <li class="dropdown__item">
-                                        <a href="#" class="nav__link">subs
+                                        <a href="#" class="nav__link">hello
                                         </a>
                                         <span class="indecator">
-                                            <label for="world"><i class="fa-solid fa-angle-down"></i></label>
+                                            <label for="hello"><i class="fa-solid fa-angle-down"></i></label>
                                         </span>
-                                        <input type="checkbox" id="world">
+        
+                                        <input type="checkbox" id="hello">
                                         <ul class="dropdown__list" id="dropdown__list-id">
-
+        
                                             <li class="dropdown__item">
                                                 <a href="#" class="nav__link">sub
                                                 </a>
@@ -217,8 +229,34 @@
                                                 <a href="#" class="nav__link">sub</a>
                                             </li>
                                             <li class="dropdown__item">
-                                                <a href="#" class="nav__link">sub
+                                                <a href="#" class="nav__link">subs
                                                 </a>
+                                                <span class="indecator">
+                                                    <label for="world"><i class="fa-solid fa-angle-down"></i></label>
+                                                </span>
+                                                <input type="checkbox" id="world">
+                                                <ul class="dropdown__list" id="dropdown__list-id">
+        
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub</a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">hello
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li class="dropdown__item">
                                                 <a href="#" class="nav__link">hello
@@ -229,68 +267,52 @@
                                                 </a>
                                             </li>
                                         </ul>
+        
+        
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="nav__link">hello
+                                        <a href="#" class="nav__link">1145646
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+        
+        
                                     </li>
                                     <li class="dropdown__item">
                                         <a href="#" class="nav__link">sub
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
                                     </li>
                                 </ul>
-
-
+        
                             </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">1145646
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-
-
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
+        
+        
+        
                         </ul>
-
-                    </li>
-
-
-
-                </ul>
-
-
-
-
-
-
-
-                <div class="nav__close" id="nav-close">
-                    <i class="fa-solid fa-x" style="color: #001c38;"></i>
+        
+        
+        
+        
+        
+        
+        
+                        <div class="nav__close" id="nav-close">
+                            <i class="fa-solid fa-x" style="color: #001c38;"></i>
+                        </div>
+        
+        
+                    </div>
                 </div>
-
-
-            </div>
-
-            <a href="#" class="nav__logo">
-                <img src="images/Zera3a.svg" alt="logo">
-            </a>
-
-
-            <div class="nav__buttons">
                 
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars" style="color: #001c38;"></i>
+                <div class="nav__buttons">
+                
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
-
-
-
-
 
         </nav>
 
@@ -301,47 +323,8 @@
         <!--==================== HOME ====================-->
         <section class="home">
 
-            <!-- <div class="home__container ">
-
-
-                <div class="home__content container">
-                    <div class="home__data">
-
-                        <span class="header__icons">
-                            <a href=""><i class="fa-brands fa-facebook-f fa-lg"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-                            <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-                        </span>
-
-
-                            <h1 class="home__title">
-                                Faculty Of Agriculture
-                            </h1>
-
-
-
-                        <a href="https://www.damanhour.edu.eg/pages/default.aspx" target="_blank"
-                            class="home__subtitle">Damanhour University</a>
-
-
-
-                    </div>
-                    <img  src="images/bird-1.svg" alt="image" class="home__bird-1">
-                    <img  src="images/bird-2.svg" alt="image" class="home__bird-2">
-
-                </div>
-                <div class="home__images ">
-                    <img  src="images/img-4.svg" alt="image" class="home__image-4">
-                    <img  src="images/img-3.svg" alt="image" class="home__image-3">
-                    <img  src="images/img-2.svg" alt="image" class="home__image-2">
-
-                </div>
-            </div> -->
-
-
             <!-- Slider main container -->
-            <div class="myHomeSwiper home__container">
+            <div class="myHomeSwiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -372,6 +355,11 @@
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
+
+            <!-- <div class="container" style="background: red; z-index: 2; height: 100px;">
+               
+            </div> -->
+           
         </section>
 
 
@@ -382,461 +370,236 @@
 
     <!-- S T A R T   N E W S -->
     <div class="padding bgw">
+        
+        <section>
+    <div class="container">
         <div class="heading" data-aos="fade-up">
             <h2>Latest News</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
         </div>
-
-        <section class="news" data-aos="fade-up">
-
-            <div class="container swiper">
-
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri1.png" alt="news1">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri2.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri3.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri4.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri5.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri7.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri8.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri8.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri7.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri9.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri10.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri11.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem,
-                                        voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione
-                                        dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo
-                                        soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit.
-                                        Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur
-                                        maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum
-                                        doloribus!
-                                        Explicabo.
-
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> Read more &nbsp; <i
-                                            class="fa-solid fa-arrow-right"></i></a> </span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- <div class="swiper-button-next "></div>
-                <div class="swiper-button-prev"></div> -->
-                <div class="swiper-pagination"></div>
-
+    
+        <div class="news">
+    <div class="pagestyle">
+        
+            <div class="dateholder">
+                <img src="images/Agri1.png" alt="news1">
+                    <span class="date">27 aug 2022</span>
+                
             </div>
-        </section>
+            <div class="flex">
+                <h5 class="h5">
+                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                            Moore</a></div>
+                </h5>
+    
+                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
+                </h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                        molestiae Lorem ipsum dolor
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
+                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
+                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
+                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
+                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                        Explicabo.
+    
+                    </p>
+                </div>
+              <div class="more">  <span class="readmore"> <a href="#"> Read more &nbsp; <i
+                            class="fa-solid fa-arrow-right"></i></a> </span>
+          <Div class="eyes"> <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i> </Div>
+                        </div>
+            </div>
+        </div>
+        <div class="pagestyle ">
+            <div class="dateholder">
+                <img src="images/Agri1.png" alt="news1">
+                <span class="date">27 aug 2022</span>
+                    
+            </div>
+            <div class="flex">
+                <h5 class="h5">
+                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                            Moore</a></div>
+                </h5>
+    
+                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
+                </h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                        molestiae Lorem ipsum dolor
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
+                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
+                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
+                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
+                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                        Explicabo.
+    
+                    </p>
+                </div>
+                <div class="more">  <span class="readmore"> <a href="#"> Read more &nbsp; <i
+                            class="fa-solid fa-arrow-right"></i></a> </span>
+          <Div class="eyes"> <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i> </Div>
+                        </div></div>
+        </div>
+        <div class="pagestyle ">
+            <div class="dateholder">
+                <img src="images/Agri1.png" alt="news1">
+                <span class="date">27 aug 2022</span>
+                    
+            </div>
+            <div class="flex">
+                <h5 class="h5">
+                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                            Moore</a></div>
+                </h5>
+    
+                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
+                </h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                        molestiae Lorem ipsum dolor
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
+                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
+                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
+                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
+                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                        Explicabo.
+    
+                    </p>
+                </div>
+                <div class="more">  <span class="readmore"> <a href="#"> Read more &nbsp; <i
+                            class="fa-solid fa-arrow-right"></i></a> </span>
+          <Div class="eyes"> <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i> </Div>
+                        </div></div>
+        </div>
+        <div class="pagestyle ">
+            <div class="dateholder">
+                <img src="images/Agri1.png" alt="news1">
+                <span class="date">27 aug 2022</span>
+                    
+            </div>
+            <div class="flex">
+                <h5 class="h5">
+                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                            Moore</a></div>
+                </h5>
+    
+                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
+                </h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                        molestiae Lorem ipsum dolor
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
+                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
+                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
+                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
+                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                        Explicabo.
+    
+                    </p>
+                </div>
+                <div class="more">  <span class="readmore"> <a href="#"> Read more &nbsp; <i
+                            class="fa-solid fa-arrow-right"></i></a> </span>
+          <Div class="eyes"> <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i> </Div>
+                        </div></div>
+        </div>
+        <div class="pagestyle ">
+            <div class="dateholder">
+                <img src="images/Agri1.png" alt="news1">
+                <span class="date">27 aug 2022</span>
+                    
+            </div>
+            <div class="flex">
+                <h5 class="h5">
+                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                            Moore</a></div>
+                </h5>
+    
+                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
+                </h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                        molestiae Lorem ipsum dolor
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
+                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
+                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
+                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
+                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                        Explicabo.
+    
+                    </p>
+                </div>
+                <div class="more">  <span class="readmore"> <a href="#"> Read more &nbsp; <i
+                            class="fa-solid fa-arrow-right"></i></a> </span>
+          <Div class="eyes"> <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i> </Div>
+                        </div></div>
+        </div>
+        <div class="pagestyle ">
+            <div class="dateholder">
+                <img src="images/Agri1.png" alt="news1">
+                <span class="date">27 aug 2022</span>
+                    
+            </div>
+            <div class="flex">
+                <h5 class="h5">
+                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                            Moore</a></div>
+                </h5>
+    
+                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
+                </h2>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
+                        molestiae Lorem ipsum dolor
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
+                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
+                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
+                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
+                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
+                        Explicabo.
+    
+                    </p>
+                </div>
+                <div class="more">  <span class="readmore"> <a href="#"> Read more &nbsp; <i
+                            class="fa-solid fa-arrow-right"></i></a> </span>
+          <Div class="eyes"> <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i> </Div>
+                        </div></div>
+        </div>
+        
+        
+    
+    
+    
+    
     </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+        </section>
+        
+            
+      
+       
+        </div>
+       
     <!-- E N D   N E W S -->
 
 
