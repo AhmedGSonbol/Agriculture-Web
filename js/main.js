@@ -51,9 +51,26 @@ const linkAction = () =>{
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const bgHeader = () =>{
     const header = document.getElementById('header')
+    const header_up = document.getElementById('header-up')
 
-    this.scrollY >= 50 ? header.classList.add('bg-header')
-                        :header.classList.remove('bg-header')
+
+    if(this.scrollY >= 125)
+    {
+        header.classList.add('bg-header')
+        header_up.classList.add('remove-header-up-shadow')
+    }else 
+    {
+        header.classList.remove('bg-header')
+        header_up.classList.remove('remove-header-up-shadow')
+    }
+
+
+
+
+
+
+
+
 }
 
 window.addEventListener('scroll',bgHeader)
@@ -84,7 +101,7 @@ function changeLang(){
 
     // langTrigger.addEventListener('click', () => {
     
-        languages = localStorage.getItem("lang") || "en";
+        languages = localStorage.getItem('lang') || 'en';
     
         if(languages === 'en'){
     

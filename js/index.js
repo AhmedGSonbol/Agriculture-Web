@@ -19,10 +19,10 @@ var homeswiper = new Swiper(".myHomeSwiper", {
   spaceBetween: 30,
   loop: true,
   centeredSlides: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false
-  },
+  // autoplay: {
+  //   delay: 3500,
+  //   disableOnInteraction: false
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
