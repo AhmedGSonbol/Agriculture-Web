@@ -113,11 +113,12 @@ function changeLang(){
     // langTrigger.addEventListener('click', () => {
     
         languages = localStorage.getItem('lang') || 'en';
-    
+            
         if(languages === 'en'){
     
             localStorage.setItem('lang','ar')
             location.replace('index-rtl.html')
+            
         }
         else{
             localStorage.setItem('lang','en')
