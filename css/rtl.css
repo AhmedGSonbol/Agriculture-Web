@@ -2,19 +2,6 @@ html {
   direction: rtl;
 }
 
-.home__images img {
-
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  right: -7rem;
-  left: initial;
-}
-
-.home__title {
-  padding-left: initial;
-  padding-right: 15px;
-}
-
 .about-image {
 
   margin-left: 40px;
@@ -61,45 +48,6 @@ padding-right: 6px;
 }
 
 
-.home__bird-1 {
-
-  rotate: 30deg;
-
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  right: 36px;
-  left: initial;
-
-}
-
-.home__bird-2 {
-  left: initial;
-  right: 20rem;
-  rotate: 15deg;
-
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.header {
-  right: 0;
-  left: initial;
-
-}
-
-/* .home__data {
-        padding-right: 3rem;
-    } */
-
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  background-color: var(--body-color);
-  z-index: var(--z-fixed);
-}
-
 .gallery-close
 {
   position: absolute;
@@ -115,6 +63,30 @@ padding-right: 6px;
 
 } */
 
+.date{
+  left: initial;
+  right: 0;
+  border-bottom-right-radius: initial;
+  border-top-right-radius: initial;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+
+.nav__list ul .nav__link {
+  padding-right: initial;
+  padding-left: 20px;
+}
+
+.img-box .slide.prev {
+  right: 5px;
+  left: initial;
+}
+
+.img-box .slide.next {
+  right: initial;
+  left: 5px;
+}
 
 @media screen and (max-width: 768px){
   .about-img2-rtl {
@@ -127,14 +99,7 @@ padding-right: 6px;
 }
 }
 
-@media screen and (max-width: 1024px) {
-  .nav__menu {
 
-    right: 0;
-    left: initial;
-
-  }
-}
 
 @media screen and (max-width : 376px) and (min-height: 800px) {
   .home__images img {
@@ -154,48 +119,11 @@ padding-right: 6px;
 }
 
 @media screen and (min-width: 1025px) {
-  .home__data {
-    padding-right: 3rem;
-    padding-left: initial;
-  }
 
-  .home__bird-2 {
-    right: 25rem;
-    left: initial;
-  }
 
   .nav__list ul ul{
     right: 100%;
   }
 
-  .nav__list{
-    padding-left: initial;
-    padding-right: 100px;
-  }
 }
-
-@media screen and (max-width: 510px) {
-  .home__bird-2 {
-    right: 16rem;
-    
-}
-
-.home__title {
-  padding-left: initial;
-  padding-right: 0;
-}
-
-}
-
-/* @media screen and (max-width: 340px) {
-
-  .home__bird-2 {
-    display: none;
-  }
-
-  .home__bird-1 {
-    display: none;
-  }
-
-} */
 
