@@ -1238,13 +1238,7 @@ footer .container .contents .subscribe .input {
   justify-content: center;
 }
 
-footer .container .contents .subscribe .input i {
- cursor: pointer;
-  color: var(--main-text);
-  position: absolute;
-  right: 7%;
-  top: 30%;
-}
+
 
 footer .container .contents .subscribe .input .email {
   padding: 0px 15px;
@@ -1261,11 +1255,18 @@ footer .container .contents .subscribe .input .submit {
   position: relative;
   border: none;
   color: var(--button-color);
-  padding: 0px 4px;
+  width: 47.5px;
+  /* padding: 0px 4px; */
 }
 
 
-
+footer .container .contents .subscribe .input i {
+ cursor: pointer;
+  color: var(--main-text);
+  position: absolute;
+  right: 16.5px;
+  top: 15.5px;
+}
 
 
 
@@ -2133,9 +2134,9 @@ padding-right: 20px;
 
    }
 
-   footer .container .contents .links {
+   /* footer .container .contents .links {
      width: 253.5px;
-   }
+   } */
  }
 
 
