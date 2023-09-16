@@ -14,15 +14,17 @@
     <!--=============== GOOGLE FONTS ===============-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!--=============== SWIPER ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--=============== META ===============-->
     <meta name="description" content="كليه الزراعة بدمنهور هي احدي كليات جامعه دمنهور تم تأسيسها بمدينة دمنهور عام 1984 لتخدم محافظة البحيرة من الناحيه التعليمية حيث يلتحق بها طلاب محافظة البحيرة والبلاد المجاورة لها الذين يرغبون في دراسة علوم الزراعة">
-    <meta name="keywords" content="كليه - زراعه - دمنهور - كليات - جامعه - دراسه">
+    <meta name="keywords" content="كليه - زراعه - دمنهور - كليات -جامعه-دراسه">
 
 </head>
 
@@ -32,160 +34,201 @@
 
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
+
+        <nav class="header-up" id="header-up">
+
+            <div class="container">
+
+
+                <span class="header__icons">
+                    <a href=""><i class="fa-brands fa-facebook-f fa-m"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-m"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube fa-m"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-m"></i></a>
+                </span>
+
+                <a href=""><i class="leaf fa-solid fa-leaf fa-lg" style="color: #6daa17;"></i></a>
+
+                <span class="header__up-short-links">
+                    <div class="lang-container" id="langTrigger">
+                        <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                        <a class="prevent-select" onclick="changeLang()">En</a>
+                    </div>
+                    <span class="H_seperator"></span>
+                    <div>
+                        <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                        <a href="#">نتائج الأمتحانات</a>
+                    </div>
+                    <span class="H_seperator"></span>
+                    <div>
+                        <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
+                        <a href="#">الشكاوي و المقترحات</a>
+                    </div>
+
+
+                </span>
+
+            </div>
+        </nav>
+
         <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="images/Zera3a.svg" alt="logo">
-            </a>
 
 
-            <div class="nav__menu" id="nav-menu">
-                <input type="checkbox" id="about">
-                <ul class="nav__list">
+            <nav class="logo-title">
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home
-                        </a>
-                        <span class="indecator"><label for="home"><i class="fa-solid fa-angle-down"></i></label></span>
-                        <input type="checkbox" id="home">
-                        <ul class="dropdown__list" id="dropdown__list-id">
+                <div class="title">
 
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
+                    <h1>كــلــيــة الــزراعــة</h1>
+                    <a href="https://www.damanhour.edu.eg/pages/default.aspx" target="_blank">جــامعــة دمــنــهــور</a>
+                </div>
+
+                <a href="#" class="nav__logo">
+                    <img src="images/Zera3a.svg" alt="logo">
+                </a>
+            </nav>
+
+
+
+
+            <div class="header-contacts-info">
+                <div class="header-contact">
+                    <div class="header-contact-icon">
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                    </div>
+                    <div class="header-contact-data">
+                        <h4>أتصل بنا</h4>
+                        <p>01064410263</p>
+                    </div>
+                </div>
+
+                <div class="header-contact">
+                    <div class="header-contact-icon">
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                    <div class="header-contact-data">
+                        <h4>أرسل لنا رسالة</h4>
+                        <p>zera3a@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="float-nav-bar container" id="float-nav-bar">
+                <div class="home">
+                    <div class="nav__menu" id="nav-menu">
+                        <input type="checkbox" id="about">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">الرئيسية
                                 </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-
-
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">more
-                                </a>
-                                <span class="indecator"><label for="more"><i
-                                            class="fa-solid fa-angle-right"></i></span></label>
-                                <input type="checkbox" id="more">
+                                <span class="indecator"><label for="home"><i
+                                            class="fa-solid fa-angle-down"></i></label></span>
+                                <input type="checkbox" id="home">
                                 <ul class="dropdown__list" id="dropdown__list-id">
 
                                     <li class="dropdown__item">
                                         <a href="#" class="nav__link">sub
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+
 
                                     </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">more
+                                        </a>
+                                        <span class="indecator"><label for="more"><i
+                                                    class="fa-solid fa-angle-right"></i></span></label>
+                                        <input type="checkbox" id="more">
+                                        <ul class="dropdown__list" id="dropdown__list-id">
+
+                                            <li class="dropdown__item">
+                                                <a href="#" class="nav__link">sub
+                                                </a>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">111111112222222223
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+                                    </li>
+
                                 </ul>
 
                             </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">111111112222222223
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-                        </ul>
 
-                    </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">نبذة عن الكلية
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Pricing
-
-                        </a>
-                        <span class="indecator">
-                            <!-- <label for="Pricing"><i class="fa-solid fa-angle-down"></i></label> -->
-
-                        </span>
-                        <!-- <input type="checkbox" id="Pricing">
-                <ul class="dropdown__list" id="dropdown__list-id">
-
-                   <li class="dropdown__item">topic 2</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                   <li class="dropdown__item">topic 12</li>
-                </ul> -->
-
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Events
-                        </a>
-                        <span class="indecator">
-                            <!-- <label for="Events"><i class="fa-solid fa-angle-down"></i></label> -->
-
-                        </span>
-                        <!-- <input type="checkbox" id="Events"> -->
-
-                        <!-- <ul class="dropdown__list" id="dropdown__list-id">
-
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                   <li class="dropdown__item">topic 13</li>
-                </ul> -->
-
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">contacts
-
-                        </a>
-                        <span class="indecator">
-                            <label for="contacts"><i class="fa-solid fa-angle-down"></i></label>
-                        </span>
-                        <input type="checkbox" id="contacts">
-                        <ul class="dropdown__list" id="dropdown__list-id">
-
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-
-
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
-
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">hello
                                 </a>
                                 <span class="indecator">
-                                    <label for="hello"><i class="fa-solid fa-angle-down"></i></label>
                                 </span>
 
-                                <input type="checkbox" id="hello">
+
+                            </li>
+
+                            
+                            
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">الأقسام
+                                </a>
+
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">الأحداث
+                                </a>
+
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">الأخبار
+                                </a>
+
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">التقديم
+
+                                </a>
+                                <span class="indecator">
+                                    <label for="contacts"><i class="fa-solid fa-angle-down"></i></label>
+                                </span>
+                                <input type="checkbox" id="contacts">
                                 <ul class="dropdown__list" id="dropdown__list-id">
 
                                     <li class="dropdown__item">
                                         <a href="#" class="nav__link">sub
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+
+
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="nav__link">sub</a>
+                                        <a href="#" class="nav__link">sub
+                                        </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
                                     </li>
+
                                     <li class="dropdown__item">
-                                        <a href="#" class="nav__link">subs
+                                        <a href="#" class="nav__link">hello
                                         </a>
                                         <span class="indecator">
-                                            <label for="world"><i class="fa-solid fa-angle-down"></i></label>
+                                            <label for="hello"><i class="fa-solid fa-angle-down"></i></label>
                                         </span>
-                                        <input type="checkbox" id="world">
+
+                                        <input type="checkbox" id="hello">
                                         <ul class="dropdown__list" id="dropdown__list-id">
 
                                             <li class="dropdown__item">
@@ -196,8 +239,34 @@
                                                 <a href="#" class="nav__link">sub</a>
                                             </li>
                                             <li class="dropdown__item">
-                                                <a href="#" class="nav__link">sub
+                                                <a href="#" class="nav__link">subs
                                                 </a>
+                                                <span class="indecator">
+                                                    <label for="world"><i class="fa-solid fa-angle-down"></i></label>
+                                                </span>
+                                                <input type="checkbox" id="world">
+                                                <ul class="dropdown__list" id="dropdown__list-id">
+
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub</a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">hello
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <a href="#" class="nav__link">sub
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li class="dropdown__item">
                                                 <a href="#" class="nav__link">hello
@@ -208,65 +277,52 @@
                                                 </a>
                                             </li>
                                         </ul>
+
+
                                     </li>
                                     <li class="dropdown__item">
-                                        <a href="#" class="nav__link">hello
+                                        <a href="#" class="nav__link">1145646
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
+
+
                                     </li>
                                     <li class="dropdown__item">
                                         <a href="#" class="nav__link">sub
                                         </a>
+                                        <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
                                     </li>
                                 </ul>
 
-
                             </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">1145646
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
 
 
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="nav__link">sub
-                                </a>
-                                <!-- <span class="indecator"><i class="fa-solid fa-angle-right"></i></span> -->
-                            </li>
+
                         </ul>
 
-                    </li>
-
-                </ul>
 
 
 
-                
 
 
-                
-          <div class="nav__close" id="nav-close">
-             <i class="fa-solid fa-x" style="color: #001c38;"></i>
-          </div>
+
+                        <div class="nav__close" id="nav-close">
+                            <i class="fa-solid fa-x" style="color: #001c38;"></i>
+                        </div>
 
 
-            </div>
-
-            <div class="nav__buttons">
-                <div class="lang-container" id="langTrigger">
-                    <i class="fa-solid fa-earth-americas fa-xl"></i>
-                    <p>En</p>
+                    </div>
                 </div>
 
-                <span class="H_seperator">
-                </span>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars" style="color: #001c38;"></i>
+                <div class="nav__buttons">
+
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
-
-            
 
         </nav>
 
@@ -276,41 +332,51 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home">
-            <div class="home__container ">
-                <div class="home__content container">
-                    <div class="home__data">
 
-                        <span class="header__icons">
-                            <a href=""><i class="fa-brands fa-facebook-f fa-lg"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-                            <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-                        </span>
-
-                        
-                            <h1 class="home__title">
-                                كـلـيـة الـزراعـة
-                            </h1>
-
-
-
-                        <a href="https://www.damanhour.edu.eg/pages/default.aspx" target="_blank"
-                            class="home__subtitle">جامـعـة دمـنـهـور</a>
-
-
-
+            <!-- Slider main container -->
+            <div class="myHomeSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images/1.png" alt="ss">
+                        <div class="img-description ">
+                           <h1>مرحبا بكم في كلية الزراعة</h1>
+                            <p>جامعة دمنهور</p>
+                        </div>
+                       
                     </div>
-                    <img src="images/bird-1.svg" alt="image" class="home__bird-1">
-                    <img src="images/bird-2.svg" alt="image" class="home__bird-2">
+                    <div class="swiper-slide">
+                        <img src="images/2.jpg" alt="ss">
+                        <div class="img-description ">
+                            <h1>اهداف الكلية</h1>
+                             <p>تسعي الكلية الي اخراج خريجين متميزين</p>
+                         </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/3.jpg" alt="ss">
+                        <div class="img-description ">
+                            <h1>تاريخ الكلية</h1>
+                             <p>تم بناء الكلية عام 1985 م</p>
+                         </div>
+                    </div>
 
                 </div>
-                <div class="home__images ">
-                    <img src="images/img-4.svg" alt="image" class="home__image-4">
-                    <img src="images/img-3.svg" alt="image" class="home__image-3">
-                    <img src="images/img-2.svg" alt="image" class="home__image-2">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
+
+            <!-- <div class="container" style="background: red; z-index: 2; height: 100px;">
+               
+            </div> -->
+
         </section>
 
 
@@ -321,413 +387,213 @@
 
     <!-- S T A R T   N E W S -->
     <div class="padding bgw">
-        <div class="heading" data-aos="fade-up">
-            <h2>اخر الأخبار</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
-        </div>
 
-        <section class="news" data-aos="fade-up">
-
-            <div class="container swiper">
-
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri1.png" alt="news1">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri2.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri3.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri4.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri5.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri7.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri8.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri8.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri7.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri9.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri10.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-                        <div class="pagestyle swiper-slide">
-                            <div class="dateholder">
-                                <img src="images/Agri11.png" alt="news2">
-                                <span class="date">27 aug 2022</span>
-                            </div>
-                            <div class="flex">
-                                <h5 class="h5">
-                                    <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
-                                    | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
-                                            Moore</a></div>
-                                </h5>
-          
-                                <h2 class="name">How Litespeed Technology Works To Speed Up Your Site
-                                </h2>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates
-                                        molestiae Lorem ipsum dolor
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore, ratione dolorem
-                                        ex incidunt rem eveniet officia voluptatibus quo quis ipsam aliquid explicabo soluta
-                                        magni iste voluptates id dolorum vel. sit amet consectetur adipisicing elit. Harum,
-                                        ipsam reprehenderit, molestias officiis totam voluptatibus sapiente consequatur maiores
-                                        similique voluptatem temporibus? Cumque nemo fuga, dolores quo debitis ipsum doloribus!
-                                        Explicabo.
-          
-                                    </p>
-                                </div>
-                                <span class="readmore"> <a href="#"> المزيد &nbsp; <i
-                                            class="fa-solid fa-arrow-left"></i></a> </span>
-                            </div>
-                        </div>
-
-
-                    </div>
+        <section>
+            <div class="container">
+                <div class="heading" data-aos="fade-up">
+                    <h2>آخر الأخبار</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
                 </div>
 
-                <div class="swiper-button-next "></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="news" data-aos="fade-up">
+                    <div class="pagestyle">
 
+                        <div class="dateholder">
+                            <img src="images/n1.jpg" alt="news1">
+                            <span class="date">31 اغسطس 2023</span>
+
+                        </div>
+                        <div class="flex">
+                            <!-- <h5 class="h5">
+                                <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                                | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                                        Moore</a></div>
+                            </h5> -->
+
+                            <h2 class="name">مشاركة العيادة الزراعية لكلية الزراعة بقرية النبيرة مركز ايتاي البارود
+                            </h2>
+                            <div class="description">
+                                <p>شاركت العيادة الزراعية بكلية الزراعة في أعمال القافلة الزراعية يوم الخميس الموافق ٧ سبتمبر ٢٠٢٣ ضمن القافله المجمعه لجامعة دمنهور بقرية الوفائية مركز الدلنجات ضمن أعمال مبادرة حياه كريمة. 
+
+                                </p>
+                            </div>
+                            <div class="more"> <span class="readmore"> <a href="#"> قراءة المزيد &nbsp; <i
+                                            class="fa-solid fa-arrow-left"></i></a> </span>
+                                <Div class="eyes">
+                                    <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagestyle ">
+                        <div class="dateholder">
+                            <img src="images/n2.jpg" alt="news1">
+                            <span class="date">الخميس, 31 اغسطس 2023</span>
+
+                        </div>
+                        <div class="flex">
+                            <!-- <h5 class="h5">
+                                <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                                | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                                        Moore</a></div>
+                            </h5> -->
+
+                            <h2 class="name">مشاركة العيادة الزراعية لكلية الزراعة بقرية النبيرة مركز ايتاي البارود
+                            </h2>
+                            <div class="description">
+                                <p>شاركت العيادة الزراعية بكلية الزراعة في أعمال القافلة الزراعية يوم الخميس الموافق ٣١ اغسطس ٢٠٢٣ ضمن القافله المجمعه لجامعة دمنهور بقرية النبيره مركز ايتاي البارود ضمن أعمال مبادرة حياه كريمة
+
+                                </p>
+                            </div>
+                            <div class="more"> <span class="readmore"> <a href="#"> قراءة المزيد &nbsp; <i
+                                            class="fa-solid fa-arrow-left"></i></a> </span>
+                                <Div class="eyes">
+                                    <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagestyle ">
+                        <div class="dateholder">
+                            <img src="images/n3.jpg" alt="news1">
+                            <span class="date">الاثنين, 21 اغسطس 2023</span>
+
+                        </div>
+                        <div class="flex">
+                            <!-- <h5 class="h5">
+                                <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                                | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                                        Moore</a></div>
+                            </h5> -->
+
+                            <h2 class="name">زراعة وانتاج عيش الغراب ضمن فعاليات الموسم الثقافي لعام ٢٠٢٣-٢٠٢٤
+                            </h2>
+                            <div class="description">
+                                <p>استمرت فعاليات الموسم الثقافي للعام ٢٠٢٣-٢٠٢٤ وذلك يوم الاحد الموافق ٢٠ اغسطس ٢٠٢٣ بندوه بعنوان زراعة وانتاج عيش الغراب قدمتها الاستاذة الدكتوره ايمان العرجاوي 
+
+                                </p>
+                            </div>
+                            <div class="more"> <span class="readmore"> <a href="#"> قراءة المزيد &nbsp; <i
+                                            class="fa-solid fa-arrow-left"></i></a> </span>
+                                <Div class="eyes">
+                                    <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagestyle">
+
+                        <div class="dateholder">
+                            <img src="images/n1.jpg" alt="news1">
+                            <span class="date">31 اغسطس 2023</span>
+
+                        </div>
+                        <div class="flex">
+                            <!-- <h5 class="h5">
+                                <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                                | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                                        Moore</a></div>
+                            </h5> -->
+
+                            <h2 class="name">مشاركة العيادة الزراعية لكلية الزراعة بقرية النبيرة مركز ايتاي البارود
+                            </h2>
+                            <div class="description">
+                                <p>شاركت العيادة الزراعية بكلية الزراعة في أعمال القافلة الزراعية يوم الخميس الموافق ٧ سبتمبر ٢٠٢٣ ضمن القافله المجمعه لجامعة دمنهور بقرية الوفائية مركز الدلنجات ضمن أعمال مبادرة حياه كريمة. 
+
+                                </p>
+                            </div>
+                            <div class="more"> <span class="readmore"> <a href="#"> قراءة المزيد &nbsp; <i
+                                            class="fa-solid fa-arrow-left"></i></a> </span>
+                                <Div class="eyes">
+                                    <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagestyle ">
+                        <div class="dateholder">
+                            <img src="images/n2.jpg" alt="news1">
+                            <span class="date">الخميس, 31 اغسطس 2023</span>
+
+                        </div>
+                        <div class="flex">
+                            <!-- <h5 class="h5">
+                                <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                                | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                                        Moore</a></div>
+                            </h5> -->
+
+                            <h2 class="name">مشاركة العيادة الزراعية لكلية الزراعة بقرية النبيرة مركز ايتاي البارود
+                            </h2>
+                            <div class="description">
+                                <p>شاركت العيادة الزراعية بكلية الزراعة في أعمال القافلة الزراعية يوم الخميس الموافق ٣١ اغسطس ٢٠٢٣ ضمن القافله المجمعه لجامعة دمنهور بقرية النبيره مركز ايتاي البارود ضمن أعمال مبادرة حياه كريمة
+
+                                </p>
+                            </div>
+                            <div class="more"> <span class="readmore"> <a href="#"> قراءة المزيد &nbsp; <i
+                                            class="fa-solid fa-arrow-left"></i></a> </span>
+                                <Div class="eyes">
+                                    <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagestyle ">
+                        <div class="dateholder">
+                            <img src="images/n3.jpg" alt="news1">
+                            <span class="date">الاثنين, 21 اغسطس 2023</span>
+
+                        </div>
+                        <div class="flex">
+                            <!-- <h5 class="h5">
+                                <div> <i class="fa-regular fa-bookmark"></i> <a href="#">Hosting</a></div>
+                                | <div> <i class="fa-regular fa-user"></i> <a href="#">Allan
+                                        Moore</a></div>
+                            </h5> -->
+
+                            <h2 class="name">زراعة وانتاج عيش الغراب ضمن فعاليات الموسم الثقافي لعام ٢٠٢٣-٢٠٢٤
+                            </h2>
+                            <div class="description">
+                                <p>استمرت فعاليات الموسم الثقافي للعام ٢٠٢٣-٢٠٢٤ وذلك يوم الاحد الموافق ٢٠ اغسطس ٢٠٢٣ بندوه بعنوان زراعة وانتاج عيش الغراب قدمتها الاستاذة الدكتوره ايمان العرجاوي 
+
+                                </p>
+                            </div>
+                            <div class="more"> <span class="readmore"> <a href="#"> قراءة المزيد &nbsp; <i
+                                            class="fa-solid fa-arrow-left"></i></a> </span>
+                                <Div class="eyes">
+                                    <p>4000</p> <i class="fa-regular fa-eye fa-xl"></i>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
     </div>
+    </section>
+    </div>
+
     <!-- E N D   N E W S -->
 
 
     <!-- S T A R T   A B O U T -->
     <div class="padding">
-
         <div class="heading" data-aos="fade-up">
-            <h2>عن الكلية</h2>
+            <h2>عـن الكلية</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
         </div>
         <div class="container">
             <section class="about">
                 <div class="about-image" data-aos="fade-up">
-                    <img loading="lazy" src="images/about.jpg" alt="">
+                    <img src="images/main1.jpg" alt="">
                 </div>
-                <div class="about-content"data-aos="fade-up">
+                <div class="about-content" data-aos="fade-up">
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ex blanditiis ad, maxime maiores
-                        sed
-                        quos vero? A, rerum maiores!</p>
+                        sed quos vero? A, rerum maiores!</p>
                     <h4>Lorem, ipsum dolor.</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum impedit fugiat aperiam quidem
                         necessitatibus illo.</p>
-                    <a href="" class="read-more">المزيد</a>
+                    <a href="" class="read-more">قراءة المزيد</a>
                 </div>
             </section>
         </div>
@@ -746,15 +612,14 @@
                 <div class="about-content" data-aos="fade-up">
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ex blanditiis ad, maxime maiores
-                        sed
-                        quos vero? A, rerum maiores!</p>
+                        sed quos vero? A, rerum maiores!</p>
                     <h4>Lorem, ipsum dolor.</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum impedit fugiat aperiam quidem
                         necessitatibus illo.</p>
-                    <a href="" class="read-more">المزيد</a>
+                    <a href="" class="read-more">قراءة المزيد</a>
                 </div>
                 <div class="about-image about-img2-rtl" data-aos="fade-up">
-                    <img loading="lazy" src="images/tree3.jpg" alt="">
+                    <img src="images/main2.jpg" alt="">
                 </div>
             </section>
         </div>
@@ -765,7 +630,7 @@
     <div class="padding">
 
         <div class="heading" data-aos="fade-up">
-            <h2>الأحصائيات</h2>
+            <h2>الأحـصـائـيـات</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
         </div>
         <section class="three" data-aos="fade-up">
@@ -774,7 +639,7 @@
                     <div class="counter">
                         <i class="fa-regular fa-heart"></i>
                         <h1><span data-goal="156" class="num">0</span></h1>
-                        <h5>هيئة التدريس</h5>
+                        <h5>هيئة تدريس</h5>
                     </div>
                     <div class="counter">
                         <i class="fa-solid fa-users"></i>
@@ -789,19 +654,19 @@
                     <div class="counter">
                         <i class="fa-solid fa-user-doctor"></i>
                         <h1><span data-goal="30" class="num">0</span></h1>
-                        <h5>الأقـســام</h5>
+                        <h5>الأقسام</h5>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
     <!-- E N D   C O U N T E R -->
 
     <!-- S T A R T   T E S T I M O N I A L -->
-    <div class="pt bgw">
+    <div class="bgw pt">
+
         <div class="heading" data-aos="fade-up">
-            <h2>أوائل الكلية</h2>
+            <h2>الأوائل لسنة 2023</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
         </div>
         <div class="bgTest" data-aos="fade-up">
@@ -810,7 +675,7 @@
                     <div class="testimonial mySwiper" data-aos="fade-up">
                         <div class="testi-content swiper-wrapper">
                             <div class="slide swiper-slide">
-                                <img loading="lazy" src="images/WhatsApp Image 2022-09-12 at 11.32.42 AM.jpeg" class="image" alt="">
+                                <img src="images/person1.jpg" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Mohamed Elwan</h2>
                                     <h3>Excellent</h3>
@@ -818,7 +683,7 @@
                                 </div>
                             </div>
                             <div class="slide swiper-slide">
-                                <img loading="lazy" src="images/WhatsApp Image 2022-09-12 at 11.32.42 AM.jpeg" class="image" alt="">
+                                <img src="images/person2.jpg" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Ahmed Sonbol</h2>
                                     <h3>Exellent</h3>
@@ -826,7 +691,7 @@
                                 </div>
                             </div>
                             <div class="slide swiper-slide">
-                                <img loading="lazy" src="images/WhatsApp Image 2022-09-12 at 11.32.42 AM.jpeg" class="image" alt="">
+                                <img src="images/person3.jpg" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Mohamed Emara</h2>
                                     <h3>Exellent</h3>
@@ -834,7 +699,7 @@
                                 </div>
                             </div>
                             <div class="slide swiper-slide">
-                                <img loading="lazy" src="images/WhatsApp Image 2022-09-12 at 11.32.42 AM.jpeg" class="image" alt="">
+                                <img src="images/person4.jpg" class="image" alt="">
                                 <div class="details">
                                     <h2 class="name">Shreef Mekawy</h2>
                                     <h3>Exellent</h3>
@@ -854,74 +719,76 @@
     <!-- E N D   T E S T I M O N I A L -->
 
     <!-- S T A R T   G A L L E R Y -->
-    <div class="padding">
+    <div class="pt">
+
         <section class="gallery container">
             <div class="heading" data-aos="fade-up">
-                <h2>ألبوم الصور</h2>
+                <h2>البوم الصور</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, illum!</p>
             </div>
             <ul data-aos="fade-up">
-                <!-- <li class="list" data-filter="all">All</li> -->
+                <!-- <li class="list active" data-filter="all">All</li> -->
                 <li class="list active" data-filter="trees">Trees</li>
                 <li class="list" data-filter="wheets">Wheets</li>
                 <li class="list" data-filter="tomatoes">Tomatoes</li>
                 <li class="list" data-filter="vegatables">Vegatables</li>
                 <li class="list" data-filter="fruits">Fruits</li>
             </ul>
-            <div class="product " data-aos="fade-up">
-                <div class="itemBox" data-item="trees"><img src="images/Agri1.png" alt=""></div>
-                <div class="itemBox" data-item="wheets"><img src="images/Agri2.png" alt=""></div>
-                <div class="itemBox" data-item="tomatoes"><img src="images/Agri3.png" alt=""></div>
-                <div class="itemBox" data-item="vegatables"><img src="images/Agri4.png" alt=""></div>
-                <div class="itemBox" data-item="fruits"><img src="images/Agri5.png" alt=""></div>
-                <div class="itemBox" data-item="trees"><img src="images/Agri6.png" alt=""></div>
-                <div class="itemBox" data-item="wheets"><img src="images/Agri7.png" alt=""></div>
-                <div class="itemBox" data-item="tomatoes"><img src="images/Agri8.png" alt=""></div>
-                <div class="itemBox" data-item="vegatables"><img src="images/Agri9.png" alt=""></div>
-                <div class="itemBox" data-item="fruits"><img src="images/Agri10.png" alt=""></div>
-                <div class="itemBox" data-item="trees"><img src="images/Agri11.png" alt=""></div>
-                <div class="itemBox" data-item="wheets"><img src="images/Agri1.png" alt=""></div>
-                <div class="itemBox" data-item="tomatoes"><img src="images/Agri2.png" alt=""></div>
-                <div class="itemBox" data-item="vegatables"><img src="images/Agri3.png" alt=""></div>
-                <div class="itemBox" data-item="fruits"><img src="images/Agri4.png" alt=""></div>
-                <div class="itemBox" data-item="trees"><img src="images/Agri5.png" alt=""></div>
-                <div class="itemBox" data-item="wheets"><img src="images/Agri6.png" alt=""></div>
-                <div class="itemBox" data-item="tomatoes"><img src="images/Agri7.png" alt=""></div>
-                <div class="itemBox" data-item="vegatables"><img src="images/Agri8.png" alt=""></div>
-                <div class="itemBox" data-item="fruits"><img src="images/Agri9.png" alt=""></div>
-                <div class="itemBox" data-item="trees"><img src="images/Agri10.png" alt=""></div>
-                <div class="itemBox" data-item="wheets"><img src="images/Agri11.png" alt=""></div>
-                <div class="itemBox" data-item="tomatoes"><img src="images/Agri1.png" alt=""></div>
-                <div class="itemBox" data-item="vegatables"><img src="images/Agri2.png" alt=""></div>
-                <div class="itemBox" data-item="fruits"><img src="images/Agri3.png" alt=""></div>
+            
+            <!-- <div class="itemBox" data-item="wheets"><img src="images/Agri7.png" alt=""></div> -->
 
-                <div id="lightbox">
-                    <div id="lightbox-item">
-                        <i id="prevBtn" class="far fa-arrow-alt-circle-right gallery-right"></i>
-                        
-                        <i id="closeBtn" class="far fa-times-circle gallery-close"></i>
-                        <i id="nextBtn" class="far fa-arrow-alt-circle-left gallery-left"></i>
-                    </div>
+            <div class="folder" data-aos="fade-up">
+                <div class="picture">
+                    <div class="photo" data-item="trees" ><span><img src="images/1.png" alt=""></span></div>
+                    <div class="photo" data-item="trees"><span><img src="images/2.jpg" alt=""></span></div>
+                    <div class="photo" data-item="vegatables"><span><img src="images/3.jpg" alt=""></span></div>
+                    <div class="photo" data-item="wheets"><span><img src="images/main1.jpg" alt=""></span></div>
+                    <div class="photo" data-item="vegatables"><span><img src="images/main2.jpg" alt=""></span></div>
+                    <div class="photo" data-item="fruits"><span><img src="images/n1.jpg" alt=""></span></div>
+                    <div class="photo" data-item="vegatables"><span><img src="images/n2.jpg" alt=""></span></div>
+                    <div class="photo" data-item="wheets"><span><img src="images/n3.jpg" alt=""></span></div>
+                    <div class="photo" data-item="tomatoes"><span><img src="images/2.jpg" alt=""></span></div>
+
                 </div>
-               
             </div>
-            <a href="" class="read-more">View More</a>
+            <div class="preview-box">
+                <div class="details">
+                    <span class="title2">
+                        الصورة <p class="current-img"></p>
+                        من <p class="total-img"></p>
+                    </span>
+                    <span class="icon fas fa-times"></span>
+                </div>
+                <div class="img-box">
+                    <div class="slide prev">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <div class="slide next">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="shadow"></div>
+
+            <a href="" class="read-more">رؤية المزيد</a>
         </section>
+
     </div>
     <!-- E N D   G A L L E R Y -->
 
     <!--S T A R T   F O O T E R-->
 
-    <footer>
+    <footer style="margin-top: 50px;">
         <div class="container">
             <div class="contents">
                 <!--links holder-->
                 <div class="links">
-                    <h2>روابط مهمة</h2>
-                    <p> <i class="fa-solid fa-arrow-left fa-2xs"></i><a href="#"> Google</a></p>
-                    <p> <i class="fa-solid fa-arrow-left fa-2xs"></i><a href="#"> Dribbble</a></p>
-                    <p> <i class="fa-solid fa-arrow-left fa-2xs"></i><a href="#"> Wikipedia</a></p>
-                    <p> <i class="fa-solid fa-arrow-left fa-2xs"></i><a href="#"> LinkedIn</a></p>
+                    <h2>روابط هامة</h2>
+                    <p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="#"> Google</a></p>
+                    <p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="#"> Dribbble</a></p>
+                    <p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="#"> Wikipedia</a></p>
+                    <p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="#"> LinkedIn</a></p>
 
 
                 </div>
@@ -930,7 +797,7 @@
                 <div>
                     <div class="links">
                         <!--contact info-->
-                        <h2>معلومات التواصل</h2>
+                        <h2>تواصل معنا</h2>
                         <i class="fa-solid fa-envelope "></i><a href="#"> exampleaaaaaaa@support.com</a>
                         <p> <i class="fa-solid fa-location-dot "></i></i><a href="#"> 5 xyz st.,
                                 abc,alexanderia,egypt
@@ -942,16 +809,16 @@
 
                 <div class="map"> <!--iframe holder-->
                     <iframe
-                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13674.301320932214!2d30.4346016!3d31.0380794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66c793a6568f7%3A0x4071775ab450d881!2z2YPZhNmK2Kkg2KfZhNiy2LHYp9i52Kkg2KzYp9mF2LnYqSDYr9mF2YbZh9mI2LE!5e0!3m2!1sar!2seg!4v1692969061577!5m2!1sar!2seg"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13674.301320932214!2d30.4346016!3d31.0380794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f66c793a6568f7%3A0x4071775ab450d881!2z2YPZhNmK2Kkg2KfZhNiy2LHYp9i52Kkg2KzYp9mF2LnYqSDYr9mF2YbZh9mI2LE!5e0!3m2!1sar!2seg!4v1692969061577!5m2!1sar!2seg"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="sublinks">
                     <h2>
-                        الأشتراك
+                        الأشــتــراك
                     </h2>
                     <div class="subscribe">
                         <form action="#">
-                            <label>أشترك لتصلك اخر الأخبار</label>
+                            <label> أشترك لتصلك آخر الأخبار</label>
                             <div class="input">
                                 <input type="email" placeholder="Email Address..." class="email" required>
                                 <input type="submit" class="submit">
@@ -969,41 +836,35 @@
                         <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
 
                     </div>
-
-
-
+                    <div class="visitors">
+                        <P>عدد الزوار :&nbsp; &nbsp;</P>
+                        <p><span>8667897546</span>
+                        </p>
+        
+        
+                    </div>
+                    
                 </div>
-
             </div>
-
-
-
-
-
-
         </div>
         </div>
         <div class="blackline"> <!--regestration-->
-            <div class="visitors">
-
-                <P>عدد الزوار :&nbsp; &nbsp;</P>
-                <p><span>8667897546</span>
-                </p>
-            </div>
             <div>
-                <p> جميع الحقوق محفوظة لجامعة دمنهور<span>© 2020 </span></p>
+                <p>جميع الحقوق محفوظة لدي جامعة دمنهور<span> © 2020 </span></p>
             </div>
         </div>
     </footer>
 
+    <!-- S T A R T   N A V   B U T T O N -->
+    <span class="go-top-btn">
+        <i class="fas fa-arrow-circle-up fa-2xl"></i>
+    </span>
+    <!-- E N D   N A V  B U T T O N -->
+
     <!-- E N D   F O O T E R -->
 
 
-    <!-- S T A R T   B U T T O N -->
-    <!-- <button id="indecator2"><i class="fa-solid fa-arrow-up text-white"></i></button> -->
-    <!-- E N D   B U T T O N -->
-
-    <script src="js/gsap.min.js"></script>
+    <!-- <script src="js/gsap.min.js"></script> -->
     <script src="js/main.js"></script>
     <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
