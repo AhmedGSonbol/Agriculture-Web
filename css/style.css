@@ -33,8 +33,7 @@
    /*========== Font and typography ==========*/
    /*.5rem = 8px | 1rem = 16px ...*/
 
-   --body-font: 'Poppins', sans-serif;
-   --second-font: 'Poppins', sans-serif;
+
    --biggest-font-size: 3.5rem;
    --normal-font-size: .938rem;
    --small-font-size: .813rem;
@@ -66,8 +65,10 @@
  .main {
    overflow: hidden;
    /* background-color: #eeecf7; */
-   background-color: #406909;
+   /* background-color: #406909; */
    /* For animation */
+   background-color: rgba(86, 153, 4, 1);
+
  }
 
  ul {
@@ -432,7 +433,9 @@
    }
  }
 
- 
+ .swiper-wrapper {
+  height: 100vh !important;
+ }
 
 
 
@@ -457,7 +460,7 @@
  .myHomeSwiper {
    position: relative;
 
-   margin-top: 57px
+   margin-top: 62px
  }
 
  .myHomeSwiper h1,
@@ -525,7 +528,8 @@
    width: 100%;
    /* height: 100px; */
    /* background: #111709; */
-   background-color: #406909;
+   /* background-color: #406909; */
+   background-color: rgba(86, 153, 4, 0.918);
    
    z-index: 20;
    top: 100%;
@@ -1111,7 +1115,7 @@ footer .container .contents {
 footer .container .contents iframe {
   width: 350px;
   height: 270px;
-  border-radius: 1.25rem;
+  border-radius: 10px;
   filter: brightness(90%);
   border: 1px solid var(--button-color);
 
@@ -1219,6 +1223,7 @@ footer .container .contents .subscribe {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid var(--button-color);
+  text-align: center;
 
 }
 
@@ -1258,9 +1263,12 @@ footer .container .contents .subscribe .input .submit {
   background-color: var(--button-color);
   position: relative;
   border: none;
-  color: var(--button-color);
-  width: 50px;
-  /* padding: 0px 4px; */
+  color: white;
+  /* width: 50px; */
+  padding: 0px 10px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-style: italic;
 }
 
 
@@ -2049,6 +2057,8 @@ padding-right: 20px;
 
    .nav__list .nav__item>a {
      padding: 10px;
+         font-weight: 600;
+
    }
 
    .nav__buttons {
