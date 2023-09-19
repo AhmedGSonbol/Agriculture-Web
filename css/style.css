@@ -756,7 +756,7 @@
    position: relative;
    /* max-width: 900px; */
    width: 100%;
-   padding: 50px 0;
+   /* padding: 50px 0; */
    overflow: hidden;
  }
 
@@ -809,7 +809,10 @@
    border: 3px solid var(--button-color);
  }
 
-
+ .testimonial .swiper-pagination
+ {
+  padding-bottom: 50px;
+ }
 
 
 
