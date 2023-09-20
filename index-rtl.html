@@ -33,6 +33,22 @@
     <!-- S T A R T   H E A D E R -->
 
     <!--==================== HEADER ====================-->
+
+    <div class="search-screen" id="search-screen">
+        <div class="close-search" id="close-search">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="search-section">
+            <div class="search-box" id="search-box">
+                <form action="#">
+                    <input id="search" type="search" placeholder="البحث ..." autofocus required />
+                    <button type="submit">بحث</button>   
+                </form>
+
+            </div>
+        </div>
+    </div>
+
     <header class="header" id="header">
 
         <nav class="header-up" id="header-up">
@@ -52,7 +68,7 @@
                 <span class="header__up-short-links">
                     <div class="lang-container" id="langTrigger">
                         <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
-                        <a class="prevent-select" onclick="changeLang()">En</a>
+                        <a href="index.html" class="prevent-select">En</a>
                     </div>
                     <span class="H_seperator"></span>
                     <div>
@@ -304,7 +320,9 @@
 
 
 
-
+                        <div class="search-btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </div>
 
                         <div class="nav__close" id="nav-close">
                             <i class="fa-solid fa-x" style="color: #001c38;"></i>
@@ -321,6 +339,11 @@
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="fa-solid fa-bars"></i>
                     </div>
+
+                    <div class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+
                 </div>
             </div>
 
