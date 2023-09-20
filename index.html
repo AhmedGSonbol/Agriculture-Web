@@ -33,6 +33,21 @@
     <!-- S T A R T   H E A D E R -->
 
     <!--==================== HEADER ====================-->
+    <div class="search-screen" id="search-screen">
+        <div class="close-search" id="close-search">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="search-section">
+            <div class="search-box" id="search-box">
+                <form action="#">
+                    <input id="search" type="search" placeholder="Search..." autofocus required />
+                    <button type="submit">Go</button>   
+                </form>
+
+            </div>
+        </div>
+    </div>
+
     <header class="header" id="header">
 
         <nav class="header-up" id="header-up">
@@ -52,7 +67,7 @@
                 <span class="header__up-short-links">
                     <div class="lang-container" id="langTrigger">
                         <!-- <i class="fa-solid fa-earth-americas fa-xl"></i> -->
-                        <a class="prevent-select" onclick="changeLang()">عربي</a>
+                        <a href="index-rtl.html" class="prevent-select" >عربي</a>
                     </div>
                     <span class="H_seperator"></span>
                     <div>
@@ -70,6 +85,8 @@
 
             </div>
         </nav>
+
+       
 
         <nav class="nav container">
 
@@ -117,6 +134,7 @@
             <div class="float-nav-bar container" id="float-nav-bar">
                 <div class="home">
                     <div class="nav__menu" id="nav-menu">
+
                         <input type="checkbox" id="about">
                         <ul class="nav__list">
                             <li class="nav__item">
@@ -301,17 +319,17 @@
                         </ul>
 
 
-
-
-
-
-
+                        <div class="search-btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    
                         <div class="nav__close" id="nav-close">
                             <i class="fa-solid fa-x" style="color: #001c38;"></i>
                         </div>
 
 
                     </div>
+                    
                 </div>
 
 
@@ -321,12 +339,20 @@
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="fa-solid fa-bars"></i>
                     </div>
+
+                    <div class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    
                 </div>
             </div>
 
         </nav>
 
     </header>
+
+    
 
     <!--==================== MAIN ====================-->
     <main class="main">
