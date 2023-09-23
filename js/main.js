@@ -130,3 +130,29 @@ function changeLang(){
     // })
 }
 
+const search_btn = document.querySelectorAll('.search-btn');
+const search_close = document.getElementById('close-search');
+
+const search_Screen = document.getElementById('search-screen');
+const search_Box = document.getElementById('search-box');
+
+search_btn.forEach(ele => {
+    ele.addEventListener('click', () => {
+
+        search_Screen.classList.add('show-search-screen');
+    
+    
+        search_Box.classList.add('show-search-box');
+    })
+})
+
+
+
+
+search_close.addEventListener('click', () => {
+
+    search_Screen.classList.remove('show-search-screen');
+
+    search_Box.classList.remove('show-search-box');
+})
+

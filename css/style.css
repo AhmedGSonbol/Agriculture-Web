@@ -29,6 +29,16 @@
    --body-color: white;
 
 
+   /* //////////////// SEARCH ///////////////// */
+   --search-rad: .7rem;
+   --search-dur: .3s;
+   --search-color-dark: #2f2f2f;
+   --search-color-brand: #57bd84;
+   --search-font-fam: 'Lato', sans-serif;
+   --search-height: 5rem;
+   --search-btn-width: 6rem;
+   --search-bez: cubic-bezier(0, 0, 0.43, 1.49);
+   /* ///////////////////////////////// */
 
    /*========== Font and typography ==========*/
    /*.5rem = 8px | 1rem = 16px ...*/
@@ -262,8 +272,134 @@
    color: white;
    /* color: var(--black-color); */
 
-   padding: 15px;
+   padding: 18.5px;
  }
+
+ .search-btn {
+   display: none;
+   color: var(--spacer-color);
+   position: absolute;
+   right: 15px;
+   top: 0px;
+   padding: 16px 18px;
+   /* background-color: var(--spacer-color); */
+   font-size: 1rem;
+   /* box-shadow: 0px 0px 5px 0px var(--spacer-color); */
+   cursor: pointer;
+   /* border-radius: 3px; */
+   /* border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; */
+
+
+ }
+
+ .search-screen {
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.6);
+   width: 100%;
+   height: 100%;
+   z-index: 99;
+
+   visibility: hidden;
+   opacity: 0;
+
+   transition: all 0.3s;
+
+ }
+
+ .search-section {
+   display: flex;
+   -webkit-box-align: center;
+   align-items: center;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .search-box {
+   width: 100%;
+   padding: 50px;
+   margin-bottom: 300px;
+   opacity: 0;
+   transition: all 1s;
+ }
+
+ .search-box input {
+   width: 100%;
+   padding: 20px;
+ }
+
+ .search-box form {
+   position: relative;
+   /* width: 30rem; */
+   background: var(--button-color);
+   border-radius: var(--search-rad);
+ }
+
+ .search-box input,
+ .search-box button {
+   height: 70px;
+   border: 0;
+
+   font-size: 1.2rem;
+ }
+
+ .search-box input[type="search"] {
+   outline: 0;
+   width: 100%;
+   background: var(--main-text);
+   padding: 0 1.6rem;
+   border-radius: var(--search-rad);
+   appearance: none;
+   transition: all var(--search-dur) var(--search-bez);
+   transition-property: width, border-radius;
+   z-index: 1;
+   position: relative;
+   color: var(--search-color-dark);
+ }
+
+ .search-box button {
+   color: white;
+   display: none;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: var(--search-btn-width);
+   font-weight: bold;
+   background: var(--button-color);
+   border-radius: 0 var(--search-rad) var(--search-rad) 0;
+   cursor: pointer;
+   outline: 0;
+ }
+
+ .search-box input:not(:placeholder-shown) {
+   border-radius: var(--search-rad) 0 0 var(--search-rad);
+   width: calc(100% - var(--search-btn-width));
+
+ }
+
+ .search-box input:not(:placeholder-shown)+button {
+   display: block;
+ }
+
+ .close-search {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   background-color: var(--main-text);
+   padding: 10px;
+   border-radius: 25px;
+   width: 44px;
+   cursor: pointer;
+   color: var(--black-color);
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+
+ }
+
+ /*=================== END SEARCH =================*/
+
+
 
  .header__icons {
    display: flex;
@@ -398,6 +534,9 @@
    border-bottom: solid 1px var(--spacer-color);
  }
 
+ .nav__menu {
+   position: relative;
+ }
 
 
  .nav__menu ul ul,
@@ -460,7 +599,7 @@
  .myHomeSwiper {
    position: relative;
 
-   margin-top: 62px
+   margin-top: 60px
  }
 
  .myHomeSwiper h1,
@@ -809,11 +948,12 @@
    border: 3px solid var(--button-color);
  }
 
- .testimonial .swiper-pagination
- {
-  padding-bottom: 50px;
+ .testimonial .swiper-pagination {
+   padding-bottom: 50px;
  }
 
+
+ /* ================ GALLERY ====================== */
 
 
  .gallery {
@@ -934,8 +1074,27 @@
    cursor: pointer;
  }
 
+ .pagination{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+ }
 
- /* ================ */
+ .pagination .read-more{
+  margin-top: 0;
+  cursor: pointer;
+ }
+
+ .pagination p{
+  font-weight: 800;
+ }
+
+
+ /* ============ FOOTER ============= */
 
  .folder {
    max-width: 1100px;
@@ -1554,6 +1713,7 @@
 
 
  }
+
  .pagestyle:hover img {
    transform: scale(1.12);
    filter: brightness(110%);
@@ -1646,6 +1806,21 @@
 
  @media screen and (max-width: 510px) {
 
+
+   .search-box input,
+   .search-box button {
+     width: calc(var(--search-btn-width) / 1.5);
+     font-size: 1rem;
+   }
+
+   .search-box input:not(:placeholder-shown) {
+     width: calc(100% - (var(--search-btn-width) / 1.5));
+
+   }
+
+   .search-box {
+     padding: 10px;
+   }
 
    .counters>div {
      grid-template-columns: 1fr;
@@ -1761,7 +1936,7 @@
  @media screen and (max-width: 992px) {
    .nav__menu {
      position: absolute;
-     bottom: 0px;
+     bottom: -10px;
      left: -15px;
      background-color: var(--body-color);
      width: calc(100% + 30px);
@@ -1785,6 +1960,8 @@
      display: block;
      animation: grow 0.3s linear;
      box-shadow: none;
+     background-color: rgba(0, 0, 0, 0.1);
+
    }
 
 
@@ -1817,6 +1994,16 @@
 
    }
 
+   .nav__buttons .search-btn {
+     display: block;
+   }
+
+   .nav__menu .search-btn {
+     display: none;
+   }
+
+
+
 
 
    .nav__list .indecator {
@@ -1835,10 +2022,10 @@
 
      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
    }
-   
+
    .picture .photo {
-    width: calc(100% / 2);
-  }
+     width: calc(100% / 2);
+   }
 
    footer .container .contents {
      gap: 40px;
@@ -1966,6 +2153,14 @@
      color: black;
    }
 
+   .nav__buttons .search-btn {
+     display: none;
+   }
+
+   .nav__menu .search-btn {
+     display: block;
+   }
+
 
    .container {
      width: 970px;
@@ -2019,14 +2214,14 @@
 
  @media only screen and (max-width:605px) {
 
-  .picture .photo {
-    padding: 4px;
-    width: calc(100%);
-  }
+   .picture .photo {
+     padding: 4px;
+     width: calc(100%);
+   }
 
-  footer .container {
-    text-align: center;
-  }
+   footer .container {
+     text-align: center;
+   }
 
    footer .container .contents {
      align-items: center;
@@ -2034,7 +2229,7 @@
 
    }
 
-   
+
 
  }
 
@@ -2055,6 +2250,17 @@
 
 
  /* Change background header */
+
+ .show-search-screen {
+   visibility: visible;
+   opacity: 1;
+ }
+
+ .show-search-box {
+   margin-bottom: 0px;
+   opacity: 1;
+ }
+
  .bg-header {
    box-shadow: 0 1px 16px hsla(210, 55%, 24%, .12);
 
