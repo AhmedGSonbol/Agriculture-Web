@@ -9,6 +9,26 @@ html {
   direction: rtl;
 }
 
+.search-btn{
+  right: initial;
+  left: 15px;
+  padding: 13.5px 18px;/* because of font */
+
+}
+
+.close-search {
+  left: 20px;
+  right: initial;
+
+}
+
+.search-box button {
+  right: initial;
+  left: 0;
+  border-radius:  var(--search-rad) 0 0 var(--search-rad) ;
+
+}
+
 .about-image {
 
   margin-left: 40px;
@@ -105,7 +125,11 @@ padding-right: 6px;
   margin-left: initial;
 }
 }
-
+@media screen and (min-width: 992px){
+.nav__list .nav__item {
+    padding: 15px;
+}
+}
 
 
 @media screen and (max-width : 376px) and (min-height: 800px) {
